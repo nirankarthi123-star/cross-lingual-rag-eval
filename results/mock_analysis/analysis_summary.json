@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-09-16T13:28:09.397242+00:00",
+  "source_db": "data/smoke_test.db",
+  "experiment_id_filter": null,
+  "source_record_count": 6,
+  "valid_record_count": 6,
+  "excluded_record_count": 0,
+  "data_classification": "MOCK/TEST",
+  "condition_summaries": {
+    "english_baseline": {
+      "n": 1,
+      "mean": 0.0,
+      "median": 0.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 1.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "tamil_english_baseline": {
+      "n": 1,
+      "mean": 0.0,
+      "median": 0.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 1.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "hindi_english_baseline": {
+      "n": 1,
+      "mean": 0.0,
+      "median": 0.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 1.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "english_mitigated": {
+      "n": 1,
+      "mean": 0.0,
+      "median": 0.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 1.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "tamil_english_mitigated": {
+      "n": 1,
+      "mean": 0.0,
+      "median": 0.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 1.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "hindi_english_mitigated": {
+      "n": 1,
+      "mean": 0.0,
+      "median": 0.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 1.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "paired_comparisons": [
+    {
+      "comparison": "English baseline vs Tamil-English baseline",
+      "n": 1,
+      "status": "INSUFFICIENT DATA",
+      "reason": "n < 2 pairs",
+      "mean_diff": null,
+      "median_diff": null,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "English baseline vs Hindi-English baseline",
+      "n": 1,
+      "status": "INSUFFICIENT DATA",
+      "reason": "n < 2 pairs",
+      "mean_diff": null,
+      "median_diff": null,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "Tamil-English baseline vs Tamil-English mitigated",
+      "n": 1,
+      "status": "INSUFFICIENT DATA",
+      "reason": "n < 2 pairs",
+      "mean_diff": null,
+      "median_diff": null,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "Hindi-English baseline vs Hindi-English mitigated",
+      "n": 1,
+      "status": "INSUFFICIENT DATA",
+      "reason": "n < 2 pairs",
+      "mean_diff": null,
+      "median_diff": null,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "Tamil-English mitigated vs English baseline",
+      "n": 1,
+      "status": "INSUFFICIENT DATA",
+      "reason": "n < 2 pairs",
+      "mean_diff": null,
+      "median_diff": null,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "Hindi-English mitigated vs English baseline",
+      "n": 1,
+      "status": "INSUFFICIENT DATA",
+      "reason": "n < 2 pairs",
+      "mean_diff": null,
+      "median_diff": null,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    }
+  ],
+  "success_criterion": [
+    {
+      "comparison": "Tamil-English mitigated versus English baseline",
+      "english_baseline_mean": 0.0,
+      "mitigated_mean": 0.0,
+      "difference": 0.0,
+      "decision": "MET"
+    },
+    {
+      "comparison": "Hindi-English mitigated versus English baseline",
+      "english_baseline_mean": 0.0,
+      "mitigated_mean": 0.0,
+      "difference": 0.0,
+      "decision": "MET"
+    }
+  ],
+  "missing_pairs": [],
+  "generated_files": [
+    "results\\mock_analysis\\condition_summary.csv",
+    "results\\mock_analysis\\paired_comparisons.csv",
+    "results\\mock_analysis\\success_criterion.csv",
+    "results\\mock_analysis\\excluded_records.csv",
+    "results\\mock_analysis\\phase10_summary.md",
+    "results\\mock_analysis\\chart_data.json"
+  ]
+}

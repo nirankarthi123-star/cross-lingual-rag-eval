@@ -1,0 +1,567 @@
+id,run_id,experiment_id,question_id,language,mitigation_enabled,original_query,normalized_query,mitigation_applied,retrieved_document_ids,retrieved_context,generated_answer,faithfulness_score,hallucination_flag,faithfulness_explanation,embedding_model,generator_model,judge_model,started_at,completed_at,error
+1,ce0071f3-99ef-4325-92da-3e33042cd23c,english_baseline,DEV-Q01,english,0,How do I activate international roaming on my mobile postpaid connection?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-16T12:25:45.255203+00:00,2026-09-16T12:28:12.053079+00:00,Groq API key is not configured. Please set GROQ_API_KEY in .env
+4,ff81aec4-3624-4b1d-b2a8-21a7e1cd19d4,english_baseline,DEV-Q01,english,0,How do I activate international roaming on my mobile postpaid connection?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:25.205264+00:00,2026-09-22T12:13:43.431907+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+22,745df4ba-5d5e-46da-bbc7-8ddccff5a0e4,english_baseline,DEV-Q01,english,0,How do I activate international roaming on my mobile postpaid connection?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:19.448748+00:00,2026-09-22T12:31:36.328959+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+40,a22955f1-e8ab-421d-a0b9-b7ad6b7ec800,english_baseline,DEV-Q01,english,0,How do I activate international roaming on my mobile postpaid connection?,,0,"[""a10c7fc9f1613ba3_c0"", ""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""4a59037b0e30a112_c0"", ""db2baa301da17199_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 2 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 3 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 4 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 5 ---
+Question: What is the notice period for terminating a broadband connection?
+Answer: Broadband connection cancellation requires a written notice of 15 calendar days submitted via the customer portal or at an authorized regional experience center.
+</context>
+
+Query: How do I activate international roaming on my mobile postpaid connection?
+","International roaming can be enabled in two ways:
+
+1. Log in to the self‑care mobile portal and go to **Manage Services** to activate roaming.  
+2. Text **“ACT IR”** to **199** at least 4 hours before your scheduled departure.",1.0,0,The answer repeats the exact information from Document 1: it states that international roaming can be enabled via the self‑care mobile portal under 'Manage Services' and by texting 'ACT IR' to 199 at least 4 hours before departure. All claims are fully supported by the context and none are contradicted.,intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:36:07.644677+00:00,2026-09-22T12:36:26.334134+00:00,
+2,e1329dc4-f1e6-463d-8abe-19e546bea366,english_baseline,DEV-Q02,english,0,What documents are required for outward foreign currency wire transfers?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-16T12:28:12.614010+00:00,2026-09-16T12:28:22.828018+00:00,Groq API key is not configured. Please set GROQ_API_KEY in .env
+5,dc927512-9805-451b-9590-6eab6aeed645,english_baseline,DEV-Q02,english,0,What documents are required for outward foreign currency wire transfers?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:43.948628+00:00,2026-09-22T12:13:44.095723+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+23,4f9f64fe-6b6a-4b42-b253-3ac6269e78b9,english_baseline,DEV-Q02,english,0,What documents are required for outward foreign currency wire transfers?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:36.875153+00:00,2026-09-22T12:31:37.011614+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+41,15c89ae8-d4e9-4ad6-9ac8-c2353db0b2dc,english_baseline,DEV-Q02,english,0,What documents are required for outward foreign currency wire transfers?,,0,"[""4a59037b0e30a112_c0"", ""7734bc2b7cac2e90_c9"", ""7734bc2b7cac2e90_c3"", ""7734bc2b7cac2e90_c8"", ""7734bc2b7cac2e90_c2""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 2 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 3 ---
+ngual curricula must submit official transcripts translated into English by a certified authority.
+
+## Section 2: Grading System and Academic Standing
+
+--- Document 4 ---
+ship annually, scholars must maintain a minimum CGPA of 3.60 and have zero disciplinary violations. Need-based financial assistance applications open annually on June 1st and require submission of authenticated family tax filings, bank declarations, and income verification documents.
+
+--- Document 5 ---
+3.0 out of 4.0 or an equivalent 75% aggregate in their secondary school certification examinations. International applicants whose primary medium of education was not English are required to present valid language proficiency scores: either an IELTS Academic overall band of at least 6.5 with no individual band below 6.0, or a TOEFL iBT score of 85 or above. Candidates from bilingual curricula must submit official transcripts translated into English by a certified authority.
+</context>
+
+Query: What documents are required for outward foreign currency wire transfers?
+","Form A2, a signed declaration of remittance purpose, a valid passport copy, the recipient bank’s SWIFT code, and verification of the Permanent Account Number (PAN) card.",1.0,0,"All factual claims in the answer exactly match the information provided in Document 1 of the context. The answer lists the required documents—Form A2, signed declaration, valid passport copy, recipient bank SWIFT code, and PAN card verification—which are precisely the items specified in the context. No unsupported or contradictory statements are present.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:36:26.847417+00:00,2026-09-22T12:36:29.113087+00:00,
+3,1789273f-14a3-48de-b9e3-b592301d63b8,english_baseline,DEV-Q03,english,0,What is the procedure for converting a physical SIM card to an eSIM?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-16T12:28:23.371596+00:00,2026-09-16T12:28:32.412678+00:00,Groq API key is not configured. Please set GROQ_API_KEY in .env
+6,7366a76c-17d5-4e84-9ef4-a954d5559235,english_baseline,DEV-Q03,english,0,What is the procedure for converting a physical SIM card to an eSIM?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:44.640587+00:00,2026-09-22T12:13:44.772983+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+24,6058dbda-a9af-4970-9b2d-172a9a471ef5,english_baseline,DEV-Q03,english,0,What is the procedure for converting a physical SIM card to an eSIM?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:37.557772+00:00,2026-09-22T12:31:37.698302+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+42,ad98ccff-3ccc-4513-ad9c-97a0bda33602,english_baseline,DEV-Q03,english,0,What is the procedure for converting a physical SIM card to an eSIM?,,0,"[""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""7734bc2b7cac2e90_c9"", ""a10c7fc9f1613ba3_c0"", ""4a59037b0e30a112_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 2 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 3 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 4 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 5 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+</context>
+
+Query: What is the procedure for converting a physical SIM card to an eSIM?
+",Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device’s Cellular Settings while connected to Wi‑Fi.,1.0,0,"The answer exactly matches the content of Document 1, which states that to convert a physical SIM to an eSIM one should submit an eSIM upgrade request via the mobile app, receive a QR code by email, and scan it in the device’s Cellular Settings while on Wi‑Fi. All factual claims in the answer are fully supported by the context and none are contradicted.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:36:29.626328+00:00,2026-09-22T12:36:31.333698+00:00,
+7,f2dcb166-9e1e-4070-b70b-935ef8ca3276,english_mitigated,DEV-Q01,english,1,How do I activate international roaming on my mobile postpaid connection?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:45.318223+00:00,2026-09-22T12:13:45.445949+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+25,a8fae5d9-44e8-4f30-9384-e7e00db59130,english_mitigated,DEV-Q01,english,1,How do I activate international roaming on my mobile postpaid connection?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:38.209611+00:00,2026-09-22T12:31:38.346924+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+43,ab37aebc-5635-439c-bf5a-ec83f8ca32a4,english_mitigated,DEV-Q01,english,1,How do I activate international roaming on my mobile postpaid connection?,,0,"[""a10c7fc9f1613ba3_c0"", ""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""4a59037b0e30a112_c0"", ""db2baa301da17199_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 2 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 3 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 4 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 5 ---
+Question: What is the notice period for terminating a broadband connection?
+Answer: Broadband connection cancellation requires a written notice of 15 calendar days submitted via the customer portal or at an authorized regional experience center.
+</context>
+
+Query: How do I activate international roaming on my mobile postpaid connection?
+",International roaming can be enabled through the self‑care mobile portal under **“Manage Services”** or by texting **“ACT IR”** to **199** at least 4 hours before your scheduled departure.,1.0,0,The answer repeats exactly the information given in Document 1: it states that international roaming can be enabled via the self‑care mobile portal under ‘Manage Services’ or by texting ‘ACT IR’ to 199 at least 4 hours before departure. All claims are fully supported by the context and none are contradicted.,intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:36:31.846102+00:00,2026-09-22T12:36:33.277148+00:00,
+8,805e534a-17c2-4416-94d9-7f44f8641f53,english_mitigated,DEV-Q02,english,1,What documents are required for outward foreign currency wire transfers?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:45.992477+00:00,2026-09-22T12:13:46.158424+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+26,6a9c92d3-75df-48de-8772-7bcd9b2d5697,english_mitigated,DEV-Q02,english,1,What documents are required for outward foreign currency wire transfers?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:38.897826+00:00,2026-09-22T12:31:39.060909+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+44,8e5a5432-a2fa-46d6-bdd7-e6bc093cacfa,english_mitigated,DEV-Q02,english,1,What documents are required for outward foreign currency wire transfers?,,0,"[""4a59037b0e30a112_c0"", ""7734bc2b7cac2e90_c9"", ""7734bc2b7cac2e90_c3"", ""7734bc2b7cac2e90_c8"", ""7734bc2b7cac2e90_c2""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 2 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 3 ---
+ngual curricula must submit official transcripts translated into English by a certified authority.
+
+## Section 2: Grading System and Academic Standing
+
+--- Document 4 ---
+ship annually, scholars must maintain a minimum CGPA of 3.60 and have zero disciplinary violations. Need-based financial assistance applications open annually on June 1st and require submission of authenticated family tax filings, bank declarations, and income verification documents.
+
+--- Document 5 ---
+3.0 out of 4.0 or an equivalent 75% aggregate in their secondary school certification examinations. International applicants whose primary medium of education was not English are required to present valid language proficiency scores: either an IELTS Academic overall band of at least 6.5 with no individual band below 6.0, or a TOEFL iBT score of 85 or above. Candidates from bilingual curricula must submit official transcripts translated into English by a certified authority.
+</context>
+
+Query: What documents are required for outward foreign currency wire transfers?
+","Form A2, a signed declaration of remittance purpose, a valid passport copy, the recipient bank’s SWIFT code, and verification of the Permanent Account Number (PAN) card.",1.0,0,"All factual claims in the answer exactly match the information provided in Document 1 of the context. The answer lists the required documents—Form A2, signed declaration, valid passport copy, recipient bank SWIFT code, and PAN card verification—which are precisely the items specified in the context. No unsupported or contradictory statements are present.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:36:33.788644+00:00,2026-09-22T12:36:35.282689+00:00,
+9,52fc6985-3b38-4449-a928-d9383a97528c,english_mitigated,DEV-Q03,english,1,What is the procedure for converting a physical SIM card to an eSIM?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:46.708902+00:00,2026-09-22T12:13:46.844814+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+27,cdb5927f-9ff0-40d1-8ac9-5925fac1c5d6,english_mitigated,DEV-Q03,english,1,What is the procedure for converting a physical SIM card to an eSIM?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:39.606413+00:00,2026-09-22T12:31:39.745146+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+45,58e6ba01-3250-45f0-9da5-73779684c713,english_mitigated,DEV-Q03,english,1,What is the procedure for converting a physical SIM card to an eSIM?,,0,"[""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""7734bc2b7cac2e90_c9"", ""a10c7fc9f1613ba3_c0"", ""4a59037b0e30a112_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 2 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 3 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 4 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 5 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+</context>
+
+Query: What is the procedure for converting a physical SIM card to an eSIM?
+",Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device’s Cellular Settings while connected to Wi‑Fi.,1.0,0,"The answer exactly matches the content of Document 1, which states that to convert a physical SIM to an eSIM one should submit an eSIM upgrade request via the mobile app, receive a QR code by email, and scan it in the device’s Cellular Settings while on Wi‑Fi. All factual claims in the answer are fully supported by the context and there are no contradictions.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:36:35.796398+00:00,2026-09-22T12:36:37.470721+00:00,
+16,d17cd434-0c07-46b4-91e7-c708a103daf3,hindi_english_baseline,DEV-Q01,hindi_english,0,Mere mobile postpaid connection par international roaming kaise activate karu?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:51.518851+00:00,2026-09-22T12:13:51.687217+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+34,ec48b767-72e5-41b7-a099-c50ecac4e5bb,hindi_english_baseline,DEV-Q01,hindi_english,0,Mere mobile postpaid connection par international roaming kaise activate karu?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:44.590226+00:00,2026-09-22T12:31:44.734299+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+52,cab0016b-9e81-4760-8693-03a3bb871592,hindi_english_baseline,DEV-Q01,hindi_english,0,Mere mobile postpaid connection par international roaming kaise activate karu?,,0,"[""a10c7fc9f1613ba3_c0"", ""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""4a59037b0e30a112_c0"", ""650a8d084f403647_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 2 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 3 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 4 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 5 ---
+What is the daily transaction limit for UPI transfers?
+
+The standard daily limit for Unified Payments Interface (UPI) transfers is 100,000 INR per bank account per 24-hour cycle. Specific peer-to-merchant or educational and healthcare transactions may have an enhanced threshold of up to 500,000 INR subject to bank verification.
+</context>
+
+Query: Mere mobile postpaid connection par international roaming kaise activate karu?
+","International roaming ko activate karne ke liye:
+
+1. **Self‑care mobile portal** – login karein aur “Manage Services” section me jaakar international roaming enable karein.  
+2. **SMS method** – 4 ghante pehle apne scheduled departure se, “ACT IR” text karein 199 number par.  
+
+In dono tariko se aap apne postpaid connection par international roaming activate kar sakte hain.",1.0,0,All factual claims in the answer directly match the information provided in Document 1. The answer correctly states that international roaming can be enabled via the self‑care mobile portal under 'Manage Services' and that texting 'ACT IR' to 199 at least 4 hours before departure activates it. It also correctly notes that these methods apply to a postpaid connection. No unsupported or contradictory statements are present.,intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:37:58.846275+00:00,2026-09-22T12:38:10.179483+00:00,
+17,0645ce8f-2c30-4578-8f45-9a95f64b2a39,hindi_english_baseline,DEV-Q02,hindi_english,0,Outward foreign currency wire transfers ke liye kaunse documents required hain?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:52.196623+00:00,2026-09-22T12:13:52.342013+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+35,d1fa90c4-3e79-46a5-aaa5-bf8a8f9819ad,hindi_english_baseline,DEV-Q02,hindi_english,0,Outward foreign currency wire transfers ke liye kaunse documents required hain?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:45.282622+00:00,2026-09-22T12:31:45.424575+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+53,7bdc913d-c96d-4080-9eb4-f2ec1853973a,hindi_english_baseline,DEV-Q02,hindi_english,0,Outward foreign currency wire transfers ke liye kaunse documents required hain?,,0,"[""4a59037b0e30a112_c0"", ""7734bc2b7cac2e90_c3"", ""7734bc2b7cac2e90_c9"", ""7734bc2b7cac2e90_c8"", ""7734bc2b7cac2e90_c2""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 2 ---
+ngual curricula must submit official transcripts translated into English by a certified authority.
+
+## Section 2: Grading System and Academic Standing
+
+--- Document 3 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 4 ---
+ship annually, scholars must maintain a minimum CGPA of 3.60 and have zero disciplinary violations. Need-based financial assistance applications open annually on June 1st and require submission of authenticated family tax filings, bank declarations, and income verification documents.
+
+--- Document 5 ---
+3.0 out of 4.0 or an equivalent 75% aggregate in their secondary school certification examinations. International applicants whose primary medium of education was not English are required to present valid language proficiency scores: either an IELTS Academic overall band of at least 6.5 with no individual band below 6.0, or a TOEFL iBT score of 85 or above. Candidates from bilingual curricula must submit official transcripts translated into English by a certified authority.
+</context>
+
+Query: Outward foreign currency wire transfers ke liye kaunse documents required hain?
+","Outward foreign currency wire transfers ke liye nimn documents required hain:
+
+- Form A2  
+- Signed declaration of remittance purpose  
+- Valid passport copy  
+- Recipient bank SWIFT code  
+- Permanent Account Number (PAN) card verification",1.0,0,The answer lists exactly the documents specified in Document 1 for outward foreign currency wire transfers. All claims are fully supported by the context.,intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:38:10.689501+00:00,2026-09-22T12:38:23.312748+00:00,
+18,46c77a3a-64e7-4808-89cc-9d8e75e757c9,hindi_english_baseline,DEV-Q03,hindi_english,0,Physical SIM card ko eSIM mein convert karne ka procedure kya hai?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:52.853825+00:00,2026-09-22T12:13:53.022164+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+36,e4a8dd01-c3f1-48c0-8c72-a190929bb0d9,hindi_english_baseline,DEV-Q03,hindi_english,0,Physical SIM card ko eSIM mein convert karne ka procedure kya hai?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:45.935997+00:00,2026-09-22T12:31:46.061432+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+54,a64ffd5b-eb0d-4c82-bfcc-a29f79369af3,hindi_english_baseline,DEV-Q03,hindi_english,0,Physical SIM card ko eSIM mein convert karne ka procedure kya hai?,,0,"[""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""7734bc2b7cac2e90_c9"", ""7734bc2b7cac2e90_c3"", ""650a8d084f403647_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 2 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 3 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 4 ---
+ngual curricula must submit official transcripts translated into English by a certified authority.
+
+## Section 2: Grading System and Academic Standing
+
+--- Document 5 ---
+What is the daily transaction limit for UPI transfers?
+
+The standard daily limit for Unified Payments Interface (UPI) transfers is 100,000 INR per bank account per 24-hour cycle. Specific peer-to-merchant or educational and healthcare transactions may have an enhanced threshold of up to 500,000 INR subject to bank verification.
+</context>
+
+Query: Physical SIM card ko eSIM mein convert karne ka procedure kya hai?
+","Physical SIM ko eSIM mein convert karne ke liye:
+
+1. Mobile app ke through eSIM upgrade request submit karein.  
+2. Aapke verified email par ek QR code bheja jayega.  
+3. Wi‑Fi se connected rehkar device ke **Cellular Settings** mein jaakar us QR code ko scan karein.",1.0,0,"All factual claims in the answer (submit eSIM upgrade request via mobile app, receive QR code via verified email, scan QR code in device Cellular Settings while connected to Wi‑Fi) are directly supported by Document 1. No claim contradicts or is unsupported by the context.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:38:23.828196+00:00,2026-09-22T12:38:34.621880+00:00,
+19,0d05addc-9530-46ca-a1f8-2fae1f578bb7,hindi_english_mitigated,DEV-Q01,hindi_english,1,Mere mobile postpaid connection par international roaming kaise activate karu?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:53.568675+00:00,2026-09-22T12:13:53.702742+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+37,15a52448-a24c-4a6b-9bdf-045180daaa25,hindi_english_mitigated,DEV-Q01,hindi_english,1,Mere mobile postpaid connection par international roaming kaise activate karu?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:46.606378+00:00,2026-09-22T12:31:46.817021+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+55,4f304a98-e295-4a31-adfb-31bc68e80611,hindi_english_mitigated,DEV-Q01,hindi_english,1,Mere mobile postpaid connection par international roaming kaise activate karu?,How do I activate international roaming on my mobile postpaid connection?,1,"[""a10c7fc9f1613ba3_c0"", ""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""4a59037b0e30a112_c0"", ""db2baa301da17199_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 2 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 3 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 4 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 5 ---
+Question: What is the notice period for terminating a broadband connection?
+Answer: Broadband connection cancellation requires a written notice of 15 calendar days submitted via the customer portal or at an authorized regional experience center.
+</context>
+
+Query: How do I activate international roaming on my mobile postpaid connection?
+",International roaming can be enabled through the self‑care mobile portal under **“Manage Services”** or by texting **“ACT IR”** to **199** at least 4 hours before your scheduled departure.,1.0,0,"The answer repeats the exact information from Document 1, which states that international roaming can be enabled via the self‑care portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before departure. All factual claims in the answer are fully supported by the context.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:38:35.136136+00:00,2026-09-22T12:38:49.559618+00:00,
+20,a2c76f06-b2af-410d-b401-3dbd3625dd29,hindi_english_mitigated,DEV-Q02,hindi_english,1,Outward foreign currency wire transfers ke liye kaunse documents required hain?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:54.250206+00:00,2026-09-22T12:13:54.388100+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+38,e9c69806-49c7-477c-8632-585e04ac4f9c,hindi_english_mitigated,DEV-Q02,hindi_english,1,Outward foreign currency wire transfers ke liye kaunse documents required hain?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:47.362105+00:00,2026-09-22T12:31:47.568240+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+56,72d881b7-7e9c-43f8-9f3b-cd52c6a4781f,hindi_english_mitigated,DEV-Q02,hindi_english,1,Outward foreign currency wire transfers ke liye kaunse documents required hain?,What documents are required for outward foreign currency wire transfers?,1,"[""4a59037b0e30a112_c0"", ""7734bc2b7cac2e90_c9"", ""7734bc2b7cac2e90_c3"", ""7734bc2b7cac2e90_c8"", ""7734bc2b7cac2e90_c2""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 2 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 3 ---
+ngual curricula must submit official transcripts translated into English by a certified authority.
+
+## Section 2: Grading System and Academic Standing
+
+--- Document 4 ---
+ship annually, scholars must maintain a minimum CGPA of 3.60 and have zero disciplinary violations. Need-based financial assistance applications open annually on June 1st and require submission of authenticated family tax filings, bank declarations, and income verification documents.
+
+--- Document 5 ---
+3.0 out of 4.0 or an equivalent 75% aggregate in their secondary school certification examinations. International applicants whose primary medium of education was not English are required to present valid language proficiency scores: either an IELTS Academic overall band of at least 6.5 with no individual band below 6.0, or a TOEFL iBT score of 85 or above. Candidates from bilingual curricula must submit official transcripts translated into English by a certified authority.
+</context>
+
+Query: What documents are required for outward foreign currency wire transfers?
+","Form A2, a signed declaration of remittance purpose, a valid passport copy, the recipient bank’s SWIFT code, and verification of the Permanent Account Number (PAN) card.",1.0,0,"All factual claims in the answer exactly match the information provided in Document 1 of the context. The answer lists the required documents—Form A2, signed declaration, valid passport copy, recipient bank SWIFT code, and PAN card verification—which are precisely the items specified in the context. No unsupported or contradictory statements are present.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:38:50.074318+00:00,2026-09-22T12:39:01.409035+00:00,
+21,f4d8746b-504f-47fd-8b53-56ba87e147fd,hindi_english_mitigated,DEV-Q03,hindi_english,1,Physical SIM card ko eSIM mein convert karne ka procedure kya hai?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:54.932381+00:00,2026-09-22T12:13:55.050057+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+39,5929354e-5c78-46d5-8737-35c165fe0f59,hindi_english_mitigated,DEV-Q03,hindi_english,1,Physical SIM card ko eSIM mein convert karne ka procedure kya hai?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:48.118113+00:00,2026-09-22T12:31:48.309432+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+57,9be0c153-5da7-4f7b-a791-960c7a925cea,hindi_english_mitigated,DEV-Q03,hindi_english,1,Physical SIM card ko eSIM mein convert karne ka procedure kya hai?,What is the procedure to convert a physical SIM card to an eSIM?,1,"[""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""7734bc2b7cac2e90_c9"", ""a10c7fc9f1613ba3_c0"", ""4a59037b0e30a112_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 2 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 3 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 4 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 5 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+</context>
+
+Query: What is the procedure to convert a physical SIM card to an eSIM?
+",Submit an eSIM upgrade request through the mobile app. You’ll receive a QR code via your verified email address. Scan that QR code in your device’s Cellular Settings while connected to Wi‑Fi.,1.0,0,"The answer exactly matches the information provided in Document 1 (and also Document 5), which states that to convert a physical SIM to an eSIM you should submit an eSIM upgrade request via the mobile app, receive a QR code by email, and scan it in the device’s Cellular Settings while on Wi‑Fi. All claims in the answer are fully supported by the context.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:39:01.928034+00:00,2026-09-22T12:39:14.249850+00:00,
+10,eda8e350-1a55-4f21-82cc-d19bd430956e,tamil_english_baseline,DEV-Q01,tamil_english,0,Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:47.392329+00:00,2026-09-22T12:13:47.547990+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+28,c24dc924-678a-452e-a35f-df7fd67f6225,tamil_english_baseline,DEV-Q01,tamil_english,0,Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:40.290579+00:00,2026-09-22T12:31:40.427357+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+46,7ea2fd0a-4af5-44a8-8ec7-4185e62afeb6,tamil_english_baseline,DEV-Q01,tamil_english,0,Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?,,0,"[""a10c7fc9f1613ba3_c0"", ""db2baa301da17199_c0"", ""4a59037b0e30a112_c0"", ""7734bc2b7cac2e90_c9"", ""ef57775e6583affc_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 2 ---
+Question: What is the notice period for terminating a broadband connection?
+Answer: Broadband connection cancellation requires a written notice of 15 calendar days submitted via the customer portal or at an authorized regional experience center.
+
+--- Document 3 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 4 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 5 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+</context>
+
+Query: Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?
+","International roaming can be activated in two ways:
+
+1. Log in to the self‑care mobile portal and go to **Manage Services** to enable roaming.  
+2. Text **“ACT IR”** to **199** at least 4 hours before you leave.",1.0,0,"All factual claims in the answer are directly supported by Document 1, which states that international roaming can be enabled via the self‑care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before departure. No claim contradicts or is unsupported by the context.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:36:37.981122+00:00,2026-09-22T12:36:49.709498+00:00,
+11,df3a9144-ccb6-4ba1-9498-320c1b8a03a7,tamil_english_baseline,DEV-Q02,tamil_english,0,Outward foreign currency wire transfers anuppa enna documents thevai?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:48.060103+00:00,2026-09-22T12:13:48.215376+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+29,ad46796d-3ef5-4704-a3ce-87162e840819,tamil_english_baseline,DEV-Q02,tamil_english,0,Outward foreign currency wire transfers anuppa enna documents thevai?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:40.967904+00:00,2026-09-22T12:31:41.115906+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+47,d007e7b0-747d-4287-beff-aaa02937f76f,tamil_english_baseline,DEV-Q02,tamil_english,0,Outward foreign currency wire transfers anuppa enna documents thevai?,,0,"[""4a59037b0e30a112_c0"", ""7734bc2b7cac2e90_c3"", ""7734bc2b7cac2e90_c9"", ""650a8d084f403647_c0"", ""7734bc2b7cac2e90_c10""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 2 ---
+ngual curricula must submit official transcripts translated into English by a certified authority.
+
+## Section 2: Grading System and Academic Standing
+
+--- Document 3 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 4 ---
+What is the daily transaction limit for UPI transfers?
+
+The standard daily limit for Unified Payments Interface (UPI) transfers is 100,000 INR per bank account per 24-hour cycle. Specific peer-to-merchant or educational and healthcare transactions may have an enhanced threshold of up to 500,000 INR subject to bank verification.
+
+--- Document 5 ---
+rations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+All end-term examinations are invigilated under strict academic honesty codes. Plagiarism, unauthorized collaboration, possession of electronic smart devices inside the examination hall, or copying from unapproved study aids results in immediate annulment of the candidate's paper and referral to the University Disciplinary Tribunal.
+</context>
+
+Query: Outward foreign currency wire transfers anuppa enna documents thevai?
+","Outward foreign‑currency wire transfers require:
+
+- Form A2  
+- A signed declaration of remittance purpose  
+- A valid passport copy  
+- The recipient bank’s SWIFT code  
+- Verification of the Permanent Account Number (PAN) card",1.0,0,"All factual claims in the answer exactly match the information provided in Document 1 of the context. The answer lists Form A2, a signed declaration of remittance purpose, a valid passport copy, the recipient bank’s SWIFT code, and PAN card verification—identical to the required documents stated in the context. No claim is unsupported or contradicted.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:36:50.223892+00:00,2026-09-22T12:37:02.667949+00:00,
+12,d9859973-0e5c-4ab2-a83b-a1a1f957e2b0,tamil_english_baseline,DEV-Q03,tamil_english,0,Oru physical SIM card-ai eSIM-aaga maatra procedure enna?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:48.731253+00:00,2026-09-22T12:13:48.923113+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+30,884a458c-0812-4ab7-9613-3f5ed5acc394,tamil_english_baseline,DEV-Q03,tamil_english,0,Oru physical SIM card-ai eSIM-aaga maatra procedure enna?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:41.661223+00:00,2026-09-22T12:31:41.806079+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+48,786fbd96-5e47-4b66-a589-8536f57918a8,tamil_english_baseline,DEV-Q03,tamil_english,0,Oru physical SIM card-ai eSIM-aaga maatra procedure enna?,,0,"[""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""7734bc2b7cac2e90_c9"", ""a10c7fc9f1613ba3_c0"", ""7734bc2b7cac2e90_c3""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 2 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 3 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 4 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 5 ---
+ngual curricula must submit official transcripts translated into English by a certified authority.
+
+## Section 2: Grading System and Academic Standing
+</context>
+
+Query: Oru physical SIM card-ai eSIM-aaga maatra procedure enna?
+","Submit an eSIM upgrade request through the mobile app. You’ll receive a QR code via your verified email address, then scan that QR code in your device’s Cellular Settings while connected to Wi‑Fi.",1.0,0,"The answer exactly matches the information provided in Document 1 (and Document 5), which states that an eSIM upgrade request is submitted via the mobile app, a QR code is sent to the verified email, and the QR code is scanned in the device’s Cellular Settings while connected to Wi‑Fi. All claims in the answer are fully supported by the context.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:37:03.181976+00:00,2026-09-22T12:37:13.986456+00:00,
+13,11397fa3-1479-4453-adc3-95731ddc93e2,tamil_english_mitigated,DEV-Q01,tamil_english,1,Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:49.470347+00:00,2026-09-22T12:13:49.607688+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+31,c6bb1b68-575f-46fe-90b8-81d988d5033c,tamil_english_mitigated,DEV-Q01,tamil_english,1,Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:42.337691+00:00,2026-09-22T12:31:42.549653+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+49,5d61138d-4df1-4341-9c4d-8fa6d39dc2d8,tamil_english_mitigated,DEV-Q01,tamil_english,1,Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?,How do I activate international roaming on my mobile postpaid connection?,1,"[""a10c7fc9f1613ba3_c0"", ""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""4a59037b0e30a112_c0"", ""db2baa301da17199_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 2 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 3 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 4 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 5 ---
+Question: What is the notice period for terminating a broadband connection?
+Answer: Broadband connection cancellation requires a written notice of 15 calendar days submitted via the customer portal or at an authorized regional experience center.
+</context>
+
+Query: How do I activate international roaming on my mobile postpaid connection?
+",International roaming can be enabled through the self‑care mobile portal under **“Manage Services”** or by texting **“ACT IR”** to **199** at least 4 hours before your scheduled departure.,1.0,0,The answer repeats exactly the information given in Document 1: it states that international roaming can be enabled via the self‑care mobile portal under ‘Manage Services’ or by texting ‘ACT IR’ to 199 at least 4 hours before departure. All claims are fully supported by the context and none are contradicted.,intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:37:14.498090+00:00,2026-09-22T12:37:29.164139+00:00,
+14,c8788f78-ab34-45db-b5c9-94cd8064f97a,tamil_english_mitigated,DEV-Q02,tamil_english,1,Outward foreign currency wire transfers anuppa enna documents thevai?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:50.156055+00:00,2026-09-22T12:13:50.296077+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+32,f996c94b-eb2c-4837-9180-776ac215a4f6,tamil_english_mitigated,DEV-Q02,tamil_english,1,Outward foreign currency wire transfers anuppa enna documents thevai?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:43.095514+00:00,2026-09-22T12:31:43.305407+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+50,9d4a840a-9907-4e43-a54e-66e251d8f54e,tamil_english_mitigated,DEV-Q02,tamil_english,1,Outward foreign currency wire transfers anuppa enna documents thevai?,What documents are required for outward foreign currency wire transfers?,1,"[""4a59037b0e30a112_c0"", ""7734bc2b7cac2e90_c9"", ""7734bc2b7cac2e90_c3"", ""7734bc2b7cac2e90_c8"", ""7734bc2b7cac2e90_c2""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+
+--- Document 2 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 3 ---
+ngual curricula must submit official transcripts translated into English by a certified authority.
+
+## Section 2: Grading System and Academic Standing
+
+--- Document 4 ---
+ship annually, scholars must maintain a minimum CGPA of 3.60 and have zero disciplinary violations. Need-based financial assistance applications open annually on June 1st and require submission of authenticated family tax filings, bank declarations, and income verification documents.
+
+--- Document 5 ---
+3.0 out of 4.0 or an equivalent 75% aggregate in their secondary school certification examinations. International applicants whose primary medium of education was not English are required to present valid language proficiency scores: either an IELTS Academic overall band of at least 6.5 with no individual band below 6.0, or a TOEFL iBT score of 85 or above. Candidates from bilingual curricula must submit official transcripts translated into English by a certified authority.
+</context>
+
+Query: What documents are required for outward foreign currency wire transfers?
+","Form A2, a signed declaration of remittance purpose, a valid passport copy, the recipient bank’s SWIFT code, and verification of the Permanent Account Number (PAN) card.",1.0,0,"All factual claims in the answer exactly match the information provided in Document 1 of the context. The answer lists the required documents—Form A2, signed declaration, valid passport copy, recipient bank SWIFT code, and PAN card verification—which are precisely the items specified in the context. No unsupported or contradictory statements are present.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:37:29.682403+00:00,2026-09-22T12:37:43.222546+00:00,
+15,b3213658-cbbc-4010-8bda-bb75a033101b,tamil_english_mitigated,DEV-Q03,tamil_english,1,Oru physical SIM card-ai eSIM-aaga maatra procedure enna?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:13:50.843856+00:00,2026-09-22T12:13:50.970505+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+33,f6f1e42c-a0ed-4b50-ad69-cdabe27f3b3b,tamil_english_mitigated,DEV-Q03,tamil_english,1,Oru physical SIM card-ai eSIM-aaga maatra procedure enna?,,0,[],,,,,,intfloat/multilingual-e5-base,llama3-8b-8192,llama-3.1-8b-instant,2026-09-22T12:31:43.851589+00:00,2026-09-22T12:31:44.044087+00:00,"An unexpected error occurred with Groq API: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+51,6061fb2c-66ed-49b2-b51d-b9cdc2af63b7,tamil_english_mitigated,DEV-Q03,tamil_english,1,Oru physical SIM card-ai eSIM-aaga maatra procedure enna?,What is the procedure to convert a physical SIM card to eSIM?,1,"[""ef57775e6583affc_c0"", ""933fe29da7866ce5_c0"", ""7734bc2b7cac2e90_c9"", ""a10c7fc9f1613ba3_c0"", ""4a59037b0e30a112_c0""]","Please answer the following query based only on the context provided below.
+
+<context>
+--- Document 1 ---
+Question: What is the procedure for converting a physical SIM card to an eSIM?
+Answer: Submit an eSIM upgrade request through the mobile app. You will receive a QR code via your verified email address. Scan this QR code in your device Cellular Settings while connected to Wi-Fi.
+
+--- Document 2 ---
+Question: Do I need a new SIM card to access 5G network speeds?
+Answer: No new SIM card is required if you already possess a 4G LTE SIM card. You only need a 5G-compatible device with enabled 5G network mode in areas covered by 5G transmission towers.
+
+--- Document 3 ---
+mission of authenticated family tax filings, bank declarations, and income verification documents.
+
+## Section 4: Examination Conduct and Integrity Policy
+
+--- Document 4 ---
+Question: How do I activate international roaming on my mobile postpaid connection?
+Answer: International roaming can be enabled through the self-care mobile portal under 'Manage Services' or by texting 'ACT IR' to 199 at least 4 hours before scheduled departure.
+
+--- Document 5 ---
+What documents are required for outward foreign currency wire transfers?
+
+Outward remittances under the Liberalised Remittance Scheme (LRS) require submission of Form A2, a signed declaration of remittance purpose, valid passport copy, recipient bank SWIFT code, and Permanent Account Number (PAN) card verification.
+</context>
+
+Query: What is the procedure to convert a physical SIM card to eSIM?
+",Submit an eSIM upgrade request through the mobile app. You’ll receive a QR code via your verified email address. Scan that QR code in your device’s Cellular Settings while connected to Wi‑Fi.,1.0,0,"The answer exactly matches the information provided in Document 1 (and also Document 5), which states that to convert a physical SIM to an eSIM you submit an upgrade request via the mobile app, receive a QR code by email, and scan it in the device’s Cellular Settings while on Wi‑Fi. All claims in the answer are fully supported by the context.",intfloat/multilingual-e5-base,openai/gpt-oss-20b,openai/gpt-oss-20b,2026-09-22T12:37:43.731251+00:00,2026-09-22T12:37:58.336246+00:00,

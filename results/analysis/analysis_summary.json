@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-09-22T12:41:09.549603+00:00",
+  "source_db": "data/rag_eval.db",
+  "experiment_id_filter": null,
+  "source_record_count": 57,
+  "valid_record_count": 18,
+  "excluded_record_count": 39,
+  "data_classification": "ACTUAL",
+  "condition_summaries": {
+    "english_baseline": {
+      "n": 3,
+      "mean": 1.0,
+      "median": 1.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "tamil_english_baseline": {
+      "n": 3,
+      "mean": 1.0,
+      "median": 1.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "hindi_english_baseline": {
+      "n": 3,
+      "mean": 1.0,
+      "median": 1.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "english_mitigated": {
+      "n": 3,
+      "mean": 1.0,
+      "median": 1.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "tamil_english_mitigated": {
+      "n": 3,
+      "mean": 1.0,
+      "median": 1.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "hindi_english_mitigated": {
+      "n": 3,
+      "mean": 1.0,
+      "median": 1.0,
+      "std_dev": 0.0,
+      "hallucination_rate": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    }
+  },
+  "paired_comparisons": [
+    {
+      "comparison": "English baseline vs Tamil-English baseline",
+      "n": 3,
+      "status": "NOT TESTABLE",
+      "reason": "All paired differences are zero",
+      "mean_diff": 0.0,
+      "median_diff": 0.0,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "English baseline vs Hindi-English baseline",
+      "n": 3,
+      "status": "NOT TESTABLE",
+      "reason": "All paired differences are zero",
+      "mean_diff": 0.0,
+      "median_diff": 0.0,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "Tamil-English baseline vs Tamil-English mitigated",
+      "n": 3,
+      "status": "NOT TESTABLE",
+      "reason": "All paired differences are zero",
+      "mean_diff": 0.0,
+      "median_diff": 0.0,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "Hindi-English baseline vs Hindi-English mitigated",
+      "n": 3,
+      "status": "NOT TESTABLE",
+      "reason": "All paired differences are zero",
+      "mean_diff": 0.0,
+      "median_diff": 0.0,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "Tamil-English mitigated vs English baseline",
+      "n": 3,
+      "status": "NOT TESTABLE",
+      "reason": "All paired differences are zero",
+      "mean_diff": 0.0,
+      "median_diff": 0.0,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    },
+    {
+      "comparison": "Hindi-English mitigated vs English baseline",
+      "n": 3,
+      "status": "NOT TESTABLE",
+      "reason": "All paired differences are zero",
+      "mean_diff": 0.0,
+      "median_diff": 0.0,
+      "statistic": null,
+      "p_value": null,
+      "interpretation": null
+    }
+  ],
+  "success_criterion": [
+    {
+      "comparison": "Tamil-English mitigated versus English baseline",
+      "english_baseline_mean": 1.0,
+      "mitigated_mean": 1.0,
+      "difference": 0.0,
+      "decision": "MET"
+    },
+    {
+      "comparison": "Hindi-English mitigated versus English baseline",
+      "english_baseline_mean": 1.0,
+      "mitigated_mean": 1.0,
+      "difference": 0.0,
+      "decision": "MET"
+    }
+  ],
+  "missing_pairs": [],
+  "generated_files": [
+    "results\\analysis\\condition_summary.csv",
+    "results\\analysis\\paired_comparisons.csv",
+    "results\\analysis\\success_criterion.csv",
+    "results\\analysis\\excluded_records.csv",
+    "results\\analysis\\phase10_summary.md",
+    "results\\analysis\\chart_data.json"
+  ]
+}

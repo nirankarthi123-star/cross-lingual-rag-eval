@@ -1,0 +1,7 @@
+condition,n,mean,median,std_dev,hallucination_rate,min,max
+english_baseline,1,0.0,0.0,0.0,1.0,0.0,0.0
+tamil_english_baseline,1,0.0,0.0,0.0,1.0,0.0,0.0
+hindi_english_baseline,1,0.0,0.0,0.0,1.0,0.0,0.0
+english_mitigated,1,0.0,0.0,0.0,1.0,0.0,0.0
+tamil_english_mitigated,1,0.0,0.0,0.0,1.0,0.0,0.0
+hindi_english_mitigated,1,0.0,0.0,0.0,1.0,0.0,0.0

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Lingual RAG Evaluation Dashboard</title>
+    <!-- Use Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+                <h1>Cross-Lingual RAG Faithfulness Evaluation</h1>
+                <p>Phase 11: Academic Dashboard</p>
+            </div>
+            <nav style="display:flex; gap:16px;">
+                <a href="/" style="color:#64748b; font-weight:500; text-decoration:none;">Chat</a>
+                <a href="/documents" style="color:#64748b; font-weight:500; text-decoration:none;">Documents</a>
+                <a href="/dashboard" style="color:#2563eb; font-weight:600; text-decoration:none;">Evaluation Dashboard</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <div id="loading" class="state-panel">
+            <div class="spinner"></div>
+            <p>Loading experiment results...</p>
+        </div>
+
+        <div id="empty-state" class="state-panel hidden">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <h2>No experimental results available.</h2>
+            <p>Run the experiment runner to populate this dashboard.</p>
+        </div>
+
+        <div id="dashboard" class="hidden">
+            <!-- 1. OVERVIEW -->
+            <section class="section">
+                <h2>1. Overview</h2>
+                <div class="grid cards">
+                    <div class="card">
+                        <h3>Total Queries Evaluated</h3>
+                        <div class="metric" id="metric-queries">-</div>
+                    </div>
+                    <div class="card">
+                        <h3>Total Experiments</h3>
+                        <div class="metric" id="metric-experiments">-</div>
+                    </div>
+                    <div class="card">
+                        <h3>Avg Faithfulness</h3>
+                        <div class="metric" id="metric-faithfulness">-</div>
+                    </div>
+                    <div class="card">
+                        <h3>Overall Hallucination Rate</h3>
+                        <div class="metric" id="metric-hallucination">-</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CHARTS SECTION -->
+            <section class="section">
+                <h2>2. Experimental Metrics</h2>
+                <div class="grid charts-grid">
+                    <!-- 2. LANGUAGE COMPARISON -->
+                    <div class="card">
+                        <h3>Language Comparison (Faithfulness)</h3>
+                        <canvas id="chart-language"></canvas>
+                    </div>
+                    
+                    <!-- 3. BASELINE VS MITIGATION -->
+                    <div class="card">
+                        <h3>Baseline vs Mitigation (Faithfulness)</h3>
+                        <canvas id="chart-mitigation"></canvas>
+                    </div>
+                    
+                    <!-- 5. HALLUCINATION RATE -->
+                    <div class="card">
+                        <h3>Hallucination Rate Comparison</h3>
+                        <canvas id="chart-hallucination"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. SUCCESS CRITERION -->
+            <section class="section">
+                <h2>3. Fixed Success Criterion</h2>
+                <p class="subtitle">Criterion: English baseline mean − mitigated code-mixed mean &le; 0.10</p>
+                <div class="grid success-grid" id="success-criterion-container">
+                    <!-- Injected via JS -->
+                </div>
+            </section>
+
+            <!-- 6 & 7 & 8. EXPLORER / TABLE -->
+            <section class="section">
+                <h2>4. Experiment Explorer</h2>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Language:</label>
+                        <select id="filter-language">
+                            <option value="">All</option>
+                            <option value="english">English</option>
+                            <option value="tamil_english">Tamil-English</option>
+                            <option value="hindi_english">Hindi-English</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Mitigation:</label>
+                        <select id="filter-mitigation">
+                            <option value="">All</option>
+                            <option value="true">Mitigated (ON)</option>
+                            <option value="false">Baseline (OFF)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Hallucination:</label>
+                        <select id="filter-hallucination">
+                            <option value="">All</option>
+                            <option value="true">True (Failed)</option>
+                            <option value="false">False (Passed)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table id="results-table">
+                        <thead>
+                            <tr>
+                                <th>Question ID</th>
+                                <th>Language</th>
+                                <th>Mitigation</th>
+                                <th>Faithfulness</th>
+                                <th>Hallucination</th>
+                                <th>Model</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-tbody">
+                            <!-- Injected via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Query Explorer Modal -->
+    <div id="explorer-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="modal-close">&times;</span>
+            <h2>Query Details: <span id="modal-qid"></span></h2>
+            
+            <div class="modal-grid">
+                <div class="info-block">
+                    <h4>Language</h4>
+                    <p id="modal-lang"></p>
+                </div>
+                <div class="info-block">
+                    <h4>Mitigation</h4>
+                    <p id="modal-mit"></p>
+                </div>
+                <div class="info-block">
+                    <h4>Faithfulness</h4>
+                    <p id="modal-faith"></p>
+                </div>
+                <div class="info-block">
+                    <h4>Hallucination</h4>
+                    <p id="modal-hal"></p>
+                </div>
+            </div>
+
+            <div class="text-block">
+                <h3>Original Query</h3>
+                <pre id="modal-orig-query"></pre>
+            </div>
+            
+            <div class="text-block">
+                <h3>Normalized Query</h3>
+                <pre id="modal-norm-query"></pre>
+            </div>
+
+            <div class="text-block">
+                <h3>Retrieved Context</h3>
+                <pre id="modal-context"></pre>
+            </div>
+
+            <div class="text-block">
+                <h3>Generated Answer</h3>
+                <pre id="modal-answer"></pre>
+            </div>
+            
+            <div class="text-block">
+                <h3>Judge Explanation</h3>
+                <pre id="modal-explanation"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

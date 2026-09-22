@@ -1,0 +1,3 @@
+comparison,english_baseline_mean,mitigated_mean,difference,decision
+Tamil-English mitigated versus English baseline,1.0,1.0,0.0,MET
+Hindi-English mitigated versus English baseline,1.0,1.0,0.0,MET

@@ -1,0 +1,18 @@
+{
+  "mean_faithfulness_by_condition": {
+    "english_baseline": 0.0,
+    "tamil_english_baseline": 0.0,
+    "hindi_english_baseline": 0.0,
+    "english_mitigated": 0.0,
+    "tamil_english_mitigated": 0.0,
+    "hindi_english_mitigated": 0.0
+  },
+  "hallucination_rate_by_condition": {
+    "english_baseline": 1.0,
+    "tamil_english_baseline": 1.0,
+    "hindi_english_baseline": 1.0,
+    "english_mitigated": 1.0,
+    "tamil_english_mitigated": 1.0,
+    "hindi_english_mitigated": 1.0
+  }
+}

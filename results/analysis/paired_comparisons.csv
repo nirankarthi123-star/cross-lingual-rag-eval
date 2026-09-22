@@ -1,0 +1,7 @@
+comparison,n,status,reason,mean_diff,median_diff,statistic,p_value,interpretation
+English baseline vs Tamil-English baseline,3,NOT TESTABLE,All paired differences are zero,0.0,0.0,,,
+English baseline vs Hindi-English baseline,3,NOT TESTABLE,All paired differences are zero,0.0,0.0,,,
+Tamil-English baseline vs Tamil-English mitigated,3,NOT TESTABLE,All paired differences are zero,0.0,0.0,,,
+Hindi-English baseline vs Hindi-English mitigated,3,NOT TESTABLE,All paired differences are zero,0.0,0.0,,,
+Tamil-English mitigated vs English baseline,3,NOT TESTABLE,All paired differences are zero,0.0,0.0,,,
+Hindi-English mitigated vs English baseline,3,NOT TESTABLE,All paired differences are zero,0.0,0.0,,,

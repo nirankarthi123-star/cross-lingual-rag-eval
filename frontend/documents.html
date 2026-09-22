@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents — Cross-Lingual RAG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <style>
+        .page-container { max-width: 720px; margin: 32px auto; padding: 0 20px; }
+        .card { background: var(--surface); padding: 24px; border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: 20px; }
+        .card h2 { margin-bottom: 14px; font-size: 1.1rem; font-weight: 600; }
+        
+        .upload-area {
+            border: 2px dashed var(--border);
+            padding: 36px;
+            text-align: center;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: 0.15s;
+            background: var(--bg);
+        }
+        .upload-area:hover { border-color: var(--primary); background: var(--primary-light); }
+        .upload-area p { color: var(--text-muted); font-size: 0.9rem; }
+        .upload-area .subtext { font-size: 0.78rem; margin-top: 8px; }
+        
+        .form-group { margin-top: 14px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.85rem; color: var(--text); }
+        .form-group input[type="text"] {
+            width: 100%; padding: 10px 12px; border: 1px solid var(--border);
+            border-radius: 6px; font-family: var(--font); font-size: 0.9rem;
+        }
+        .form-group input[type="text"]:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(59,91,219,0.1); }
+        
+        .form-actions { margin-top: 18px; display: flex; justify-content: space-between; align-items: center; }
+        
+        .btn { padding: 10px 20px; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; font-family: var(--font); font-size: 0.9rem; transition: 0.15s; }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { background: #2f4dc4; }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-warning { background: var(--warning); color: #fff; }
+        .btn-warning:hover { background: #b45309; }
+        .btn-warning:disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        .alert {
+            padding: 12px 16px; border-radius: 6px; margin-bottom: 20px;
+            font-size: 0.85rem; line-height: 1.5;
+        }
+        .alert-warning { background: #fffbeb; color: #92400e; border: 1px solid #fde68a; }
+        
+        .status-msg { margin-top: 14px; font-size: 0.85rem; font-weight: 500; }
+        .success { color: var(--success); }
+        .error { color: var(--error); }
+        
+        .selected-file { font-size: 0.85rem; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-inner">
+            <span class="nav-brand">Cross-Lingual RAG</span>
+            <nav>
+                <a href="/">Chat</a>
+                <a href="/documents" class="active">Documents</a>
+                <a href="/dashboard">Evaluation Dashboard</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <div class="alert alert-warning">
+            <strong>Note:</strong> Changing the corpus does not alter existing Phase 10 results. Run a new experiment for this corpus version.
+        </div>
+
+        <div class="card">
+            <h2>Upload Document</h2>
+            <form id="upload-form">
+                <div class="upload-area" id="drop-zone" onclick="document.getElementById('file-input').click()">
+                    <p>Click to select a file, or drag and drop</p>
+                    <p class="subtext">Supported: PDF, TXT, CSV, JSON</p>
+                    <input type="file" id="file-input" style="display:none" accept=".pdf,.txt,.csv,.json">
+                </div>
+                
+                <div class="form-group">
+                    <label for="source-url">Source URL or Title (for provenance)</label>
+                    <input type="text" id="source-url" placeholder="e.g. https://example.com/faq.pdf or 'Customer FAQ v2'" required>
+                </div>
+                
+                <div class="form-actions">
+                    <span class="selected-file" id="selected-file">No file selected</span>
+                    <button type="submit" class="btn btn-primary" id="upload-btn" disabled>Upload</button>
+                </div>
+                <div id="upload-status" class="status-msg"></div>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Rebuild Index</h2>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:14px; line-height:1.6;">
+                After uploading new documents, ingest them to rebuild the FAISS vector index. This parses all files, generates chunks and embeddings, and reloads the index into memory.
+            </p>
+            <button class="btn btn-warning" id="ingest-btn">Ingest &amp; Rebuild Index</button>
+            <div id="ingest-status" class="status-msg"></div>
+        </div>
+    </main>
+
+    <script src="/documents.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+[
+  {
+    "question_id": "DEV-Q01",
+    "domain": "Telecom",
+    "english": "How do I activate international roaming on my mobile postpaid connection?",
+    "tamil_english": "Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?",
+    "hindi_english": "Mere mobile postpaid connection par international roaming kaise activate karu?",
+    "script_type": "Romanized",
+    "category": "Postpaid Services",
+    "expected_document_ids": ["a10c7fc9f1613ba3"],
+    "difficulty": "Easy"
+  },
+  {
+    "question_id": "DEV-Q02",
+    "domain": "Banking",
+    "english": "What documents are required for outward foreign currency wire transfers?",
+    "tamil_english": "Outward foreign currency wire transfers anuppa enna documents thevai?",
+    "hindi_english": "Outward foreign currency wire transfers ke liye kaunse documents required hain?",
+    "script_type": "Romanized",
+    "category": "International Transfers",
+    "expected_document_ids": ["4a59037b0e30a112"],
+    "difficulty": "Medium"
+  },
+  {
+    "question_id": "DEV-Q03",
+    "domain": "Telecom",
+    "english": "What is the procedure for converting a physical SIM card to an eSIM?",
+    "tamil_english": "Oru physical SIM card-ai eSIM-aaga maatra procedure enna?",
+    "hindi_english": "Physical SIM card ko eSIM mein convert karne ka procedure kya hai?",
+    "script_type": "Romanized",
+    "category": "Device Support",
+    "expected_document_ids": ["ef57775e6583affc"],
+    "difficulty": "Easy"
+  }
+]

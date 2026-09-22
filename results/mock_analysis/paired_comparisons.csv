@@ -1,0 +1,7 @@
+comparison,n,status,reason,mean_diff,median_diff,statistic,p_value,interpretation
+English baseline vs Tamil-English baseline,1,INSUFFICIENT DATA,n < 2 pairs,,,,,
+English baseline vs Hindi-English baseline,1,INSUFFICIENT DATA,n < 2 pairs,,,,,
+Tamil-English baseline vs Tamil-English mitigated,1,INSUFFICIENT DATA,n < 2 pairs,,,,,
+Hindi-English baseline vs Hindi-English mitigated,1,INSUFFICIENT DATA,n < 2 pairs,,,,,
+Tamil-English mitigated vs English baseline,1,INSUFFICIENT DATA,n < 2 pairs,,,,,
+Hindi-English mitigated vs English baseline,1,INSUFFICIENT DATA,n < 2 pairs,,,,,

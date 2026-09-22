@@ -1,0 +1,43 @@
+# Python byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets (Never commit secrets)
+.env
+*.env
+!.env.example
+
+# Testing & code coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and persistence
+*.db
+*.sqlite
+*.sqlite3
+
+# Data directories
+data/vector_store/*
+data/processed/*
+!data/processed/.gitkeep
+
+# Allow source documents and queries to be tracked
+!data/documents/
+!data/queries/
+
+# IDEs & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

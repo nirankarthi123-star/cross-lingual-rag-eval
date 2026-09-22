@@ -1,0 +1,44 @@
+// Architecture Diagram
+digraph {
+	fontname=Helvetica rankdir=TB size="8,10"
+	node [fillcolor="#f0f0f0" fontname=Helvetica fontsize=10 shape=box style=filled]
+	edge [fontname=Helvetica fontsize=9]
+	source [label="Source Documents"]
+	processing [label="Document Processing"]
+	chunking [label="Text Chunking"]
+	embeddings [label="Multilingual Embeddings
+(intfloat/multilingual-e5-base)"]
+	faiss [label="FAISS Vector Store" fillcolor="#d9edf7" shape=cylinder]
+	user_query [label="User Query" fillcolor="#dff0d8" shape=oval]
+	detection [label="Code-Mix Detection"]
+	normalization [label="Optional Query Normalization
+(Mitigation Enabled)"]
+	retrieval [label="Top-K Retrieval"]
+	llm [label="LLM Answer Generation
+(Groq / gpt-oss-20b)"]
+	answer [label="Generated Answer" shape=oval]
+	judge [label="LLM-as-a-Judge
+(Faithfulness)"]
+	score [label="Faithfulness Score +
+Hallucination Flag"]
+	sqlite [label="SQLite Storage" fillcolor="#fcf8e3" shape=cylinder]
+	analysis [label="Statistical Analysis
+(SciPy / Wilcoxon)"]
+	results [label="Final Results" fillcolor="#f2dede" shape=oval]
+	source -> processing
+	processing -> chunking
+	chunking -> embeddings
+	embeddings -> faiss
+	user_query -> detection
+	detection -> normalization
+	normalization -> retrieval
+	faiss -> retrieval [label="Vector Search" style=dashed]
+	retrieval -> llm [label="Retrieved Context"]
+	llm -> answer
+	answer -> judge
+	retrieval -> judge [label="Context Reference" style=dashed]
+	judge -> score
+	score -> sqlite
+	sqlite -> analysis
+	analysis -> results
+}
