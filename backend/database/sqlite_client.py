@@ -60,7 +60,11 @@ class SQLiteClient:
                         judge_model TEXT,
                         started_at TEXT,
                         completed_at TEXT,
-                        error TEXT
+                        error TEXT,
+                        expected_document_ids TEXT,
+                        recall_at_1 REAL,
+                        recall_at_3 REAL,
+                        recall_at_5 REAL
                     )
                 ''')
 
@@ -155,6 +159,18 @@ class SQLiteClient:
         try:
             with sqlite3.connect(self.db_path) as conn:
                 cursor = conn.cursor()
+                # Add new columns if upgrading from an older DB (migration safety)
+                for col, col_type in [
+                    ("expected_document_ids", "TEXT"),
+                    ("recall_at_1", "REAL"),
+                    ("recall_at_3", "REAL"),
+                    ("recall_at_5", "REAL"),
+                ]:
+                    try:
+                        cursor.execute(f"ALTER TABLE experiment_results ADD COLUMN {col} {col_type}")
+                    except Exception:
+                        pass  # Column already exists
+
                 cursor.execute('''
                     INSERT OR IGNORE INTO experiment_results
                     (run_id, experiment_id, question_id, language, mitigation_enabled,
@@ -162,8 +178,9 @@ class SQLiteClient:
                      retrieved_document_ids, retrieved_context, generated_answer,
                      faithfulness_score, hallucination_flag, faithfulness_explanation,
                      embedding_model, generator_model, judge_model,
-                     started_at, completed_at, error)
-                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                     started_at, completed_at, error,
+                     expected_document_ids, recall_at_1, recall_at_3, recall_at_5)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 ''', (
                     result.run_id,
                     result.experiment_id,
@@ -185,6 +202,10 @@ class SQLiteClient:
                     result.started_at,
                     result.completed_at,
                     result.error,
+                    json.dumps(result.expected_document_ids),
+                    result.recall_at_1,
+                    result.recall_at_3,
+                    result.recall_at_5,
                 ))
                 conn.commit()
                 return cursor.lastrowid

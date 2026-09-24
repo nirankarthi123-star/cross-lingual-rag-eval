@@ -19,7 +19,8 @@ from backend.evaluation.analysis import (
     load_and_validate_data,
     compute_descriptive_stats,
     run_paired_comparisons,
-    evaluate_success_criterion
+    evaluate_success_criterion,
+    compute_recall_at_k
 )
 
 setup_logging()
@@ -76,6 +77,12 @@ def generate_markdown_report(filepath, summary_data):
         for sc in summary_data["success_criterion"]:
             f.write(f"| {sc['comparison']} | {sc['english_baseline_mean']} | {sc['mitigated_mean']} | {sc['difference']} | **{sc['decision']}** |\n")
 
+        f.write("\n## Retrieval Quality (Recall@K)\n")
+        f.write("| Condition | n | Recall@1 | Recall@3 | Recall@5 |\n")
+        f.write("|---|---|---|---|---|\n")
+        for cond, rk in summary_data.get("recall_stats", {}).items():
+            f.write(f"| {cond} | {rk['n_with_recall']} | {rk['recall_at_1']} | {rk['recall_at_3']} | {rk['recall_at_5']} |\n")
+
 
 def generate_dashboard_data(filepath, stats):
     """Generates chart-ready JSON data for dashboards."""
@@ -119,6 +126,7 @@ def main():
     stats = compute_descriptive_stats(valid_records)
     paired_results, missing_pairs = run_paired_comparisons(valid_records)
     success_results = evaluate_success_criterion(stats)
+    recall_stats = compute_recall_at_k(valid_records)
     
     # Create outputs
     out_dir = Path(args.output_dir)
@@ -131,6 +139,8 @@ def main():
     write_csv(out_dir / "success_criterion.csv", success_results)
     write_csv(out_dir / "excluded_records.csv", excluded_records)
     write_csv(out_dir / "missing_pairs.csv", missing_pairs)
+    recall_rows = [{"condition": k, **v} for k, v in recall_stats.items()]
+    write_csv(out_dir / "recall_at_k.csv", recall_rows)
     
     # 2. JSON Summary
     summary_data = {
@@ -145,6 +155,7 @@ def main():
         "paired_comparisons": paired_results,
         "success_criterion": success_results,
         "missing_pairs": missing_pairs,
+        "recall_stats": recall_stats,
         "generated_files": [
             str(out_dir / "condition_summary.csv"),
             str(out_dir / "paired_comparisons.csv"),

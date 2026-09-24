@@ -105,7 +105,8 @@ def test_judge_returns_fallback_on_invalid_json():
     result = judge.evaluate(answer="test", context="test context")
     assert result.faithfulness_score == 0.0
     assert result.hallucination_flag is True
-    assert "valid JSON" in result.explanation
+    # Updated message from new recovery-aware fallback path
+    assert "invalid JSON" in result.explanation
 
 
 # ---------------------------------------------------------------------------
@@ -136,3 +137,77 @@ def test_evaluation_result_schema():
     )
     assert result.faithfulness_score == 0.9
     assert result.hallucination_flag is False
+
+
+# ---------------------------------------------------------------------------
+# Tests: truncated JSON recovery (the primary bug fix)
+# ---------------------------------------------------------------------------
+
+def test_judge_recovers_score_from_truncated_json_score_1():
+    """Simulates Groq truncating the response mid-explanation string.
+    The score must be salvaged via regex; hallucination_flag must be False."""
+    truncated = '{"faithfulness_score": 1.0, "explanation": "All claims are directly sup'
+    judge = LLMFaithfulnessJudge(llm=MockJudgeLLM(truncated))
+    result = judge.evaluate(answer="test", context="test context")
+    assert result.faithfulness_score == pytest.approx(1.0)
+    assert result.hallucination_flag is False
+    assert "Recovered" in result.explanation
+
+
+def test_judge_recovers_score_from_truncated_json_score_0():
+    """Truncated response with score=0.0 — flag must be True."""
+    truncated = '{"faithfulness_score": 0.0, "explanation": "No claims are support'
+    judge = LLMFaithfulnessJudge(llm=MockJudgeLLM(truncated))
+    result = judge.evaluate(answer="test", context="test context")
+    assert result.faithfulness_score == pytest.approx(0.0)
+    assert result.hallucination_flag is True
+    assert "Recovered" in result.explanation
+
+
+def test_judge_fallback_when_score_unrecoverable():
+    """JSON that is malformed AND has no extractable score must fall back to 0.0."""
+    garbage = '{"explanation": "something went'
+    judge = LLMFaithfulnessJudge(llm=MockJudgeLLM(garbage))
+    result = judge.evaluate(answer="test", context="test context")
+    assert result.faithfulness_score == 0.0
+    assert result.hallucination_flag is True
+    assert "invalid JSON" in result.explanation
+
+
+def test_score_1_is_not_hallucination():
+    """score == 1.0 must produce hallucination_flag=False."""
+    judge = LLMFaithfulnessJudge(llm=MockJudgeLLM(make_judge_response(1.0)))
+    result = judge.evaluate(answer="test", context="test context")
+    assert result.faithfulness_score == pytest.approx(1.0)
+    assert result.hallucination_flag is False
+
+
+def test_score_0_is_hallucination():
+    """score == 0.0 must produce hallucination_flag=True."""
+    judge = LLMFaithfulnessJudge(llm=MockJudgeLLM(make_judge_response(0.0)))
+    result = judge.evaluate(answer="test", context="test context")
+    assert result.faithfulness_score == pytest.approx(0.0)
+    assert result.hallucination_flag is True
+
+
+# ---------------------------------------------------------------------------
+# Tests: empty / whitespace-only response guard (this PR's fix)
+# ---------------------------------------------------------------------------
+
+def test_judge_handles_empty_string_response():
+    """Groq can return HTTP 200 with an empty body after a 429 retry.
+    Must log a clear warning and return the safe fallback — not crash."""
+    judge = LLMFaithfulnessJudge(llm=MockJudgeLLM(""))
+    result = judge.evaluate(answer="test", context="test context")
+    assert result.faithfulness_score == 0.0
+    assert result.hallucination_flag is True
+    assert "empty response" in result.explanation
+
+
+def test_judge_handles_whitespace_only_response():
+    """Whitespace-only response must be treated identically to empty."""
+    judge = LLMFaithfulnessJudge(llm=MockJudgeLLM("   \n\t  "))
+    result = judge.evaluate(answer="test", context="test context")
+    assert result.faithfulness_score == 0.0
+    assert result.hallucination_flag is True
+    assert "empty response" in result.explanation

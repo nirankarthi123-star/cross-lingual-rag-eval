@@ -45,6 +45,14 @@ class ExperimentResult(BaseModel):
     retrieved_document_ids: List[str] = Field(default_factory=list, description="IDs of retrieved chunks.")
     retrieved_context: str = Field("", description="Concatenated retrieved context passed to the generator.")
 
+    # Ground-truth document IDs (from the query dataset) — used for Recall@K
+    expected_document_ids: List[str] = Field(default_factory=list, description="Expected relevant document IDs from the query dataset.")
+
+    # Recall@K metrics (computed after retrieval, stored per-run)
+    recall_at_1: Optional[float] = Field(None, description="Recall@1: 1.0 if any expected doc appears in top-1 retrieved, else 0.0.")
+    recall_at_3: Optional[float] = Field(None, description="Recall@3: 1.0 if any expected doc appears in top-3 retrieved, else 0.0.")
+    recall_at_5: Optional[float] = Field(None, description="Recall@5: 1.0 if any expected doc appears in top-5 retrieved, else 0.0.")
+
     # Generation
     generated_answer: str = Field("", description="The generated answer text.")
 

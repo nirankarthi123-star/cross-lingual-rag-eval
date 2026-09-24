@@ -131,6 +131,26 @@ class ExperimentRunner:
                     doc.chunk_id for doc in response.retrieved_documents
                 ]
 
+                # --- Recall@K computation ---
+                # expected_document_ids are at document level (e.g. "5627f773659c8503").
+                # retrieved_doc_ids are chunk IDs (e.g. "5627f773659c8503_chunk_0").
+                # We match if the chunk ID *starts with* any expected doc ID prefix.
+                expected_ids = list(record.expected_document_ids or [])
+
+                def _recall_at_k(retrieved: list, expected: list, k: int) -> float:
+                    if not expected:
+                        return 0.0
+                    top_k = retrieved[:k]
+                    for chunk_id in top_k:
+                        for exp_id in expected:
+                            if chunk_id.startswith(exp_id) or exp_id.startswith(chunk_id) or exp_id == chunk_id:
+                                return 1.0
+                    return 0.0
+
+                recall_1 = _recall_at_k(retrieved_doc_ids, expected_ids, 1)
+                recall_3 = _recall_at_k(retrieved_doc_ids, expected_ids, 3)
+                recall_5 = _recall_at_k(retrieved_doc_ids, expected_ids, 5)
+
                 return ExperimentResult(
                     run_id=run_id,
                     experiment_id=config.experiment_id,
@@ -152,6 +172,10 @@ class ExperimentRunner:
                     started_at=started_at,
                     completed_at=completed_at,
                     error=None,
+                    expected_document_ids=expected_ids,
+                    recall_at_1=recall_1,
+                    recall_at_3=recall_3,
+                    recall_at_5=recall_5,
                 )
 
             except Exception as e:

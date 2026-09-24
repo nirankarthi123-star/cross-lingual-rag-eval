@@ -27,7 +27,7 @@ class LLMFaithfulnessJudge(FaithfulnessJudge):
                     prompt=user_prompt,
                     system_prompt=JUDGE_SYSTEM_PROMPT,
                     temperature=self.settings.JUDGE_TEMPERATURE,
-                    max_tokens=512,
+                    max_tokens=256,   # increased: short JSON payload needs ~80 tokens; 256 gives ample headroom
                     model=self.settings.JUDGE_LLM_MODEL,  # judge uses its own model
                 )
                 
@@ -49,8 +49,26 @@ class LLMFaithfulnessJudge(FaithfulnessJudge):
                     )
                     
     def _parse_response(self, response_text: str) -> EvaluationResult:
+        import re
+
+        # ------------------------------------------------------------------
+        # Guard: empty or whitespace-only response from the API.
+        # This happens when Groq returns HTTP 200 with no body content after
+        # a 429 retry — json.loads would raise "Expecting value: line 1 col 1"
+        # which is confusing.  Catch it explicitly with a clear log message.
+        # ------------------------------------------------------------------
+        if not response_text or not response_text.strip():
+            logger.warning("Judge returned an empty response after successful API call.")
+            return EvaluationResult(
+                faithfulness_score=0.0,
+                hallucination_flag=True,
+                explanation="Judge returned an empty response.",
+                judge_model=self.settings.JUDGE_LLM_MODEL,
+                judge_prompt_version=JUDGE_PROMPT_VERSION
+            )
+
         try:
-            # Try to parse the response as JSON. Strip potential markdown blocks.
+            # Strip potential markdown code fences.
             cleaned_text = response_text.strip()
             if cleaned_text.startswith("```json"):
                 cleaned_text = cleaned_text[7:]
@@ -58,19 +76,19 @@ class LLMFaithfulnessJudge(FaithfulnessJudge):
                 cleaned_text = cleaned_text[3:]
             if cleaned_text.endswith("```"):
                 cleaned_text = cleaned_text[:-3]
-            
+
             cleaned_text = cleaned_text.strip()
             data = json.loads(cleaned_text)
-            
+
             score = float(data.get("faithfulness_score", 0.0))
             # Clamp to 0.0 - 1.0
             score = max(0.0, min(1.0, score))
-            
+
             explanation = data.get("explanation", "No explanation provided.")
-            
+
             # Determine hallucination flag based on threshold
             is_hallucination = score < self.settings.HALLUCINATION_THRESHOLD
-            
+
             return EvaluationResult(
                 faithfulness_score=score,
                 hallucination_flag=is_hallucination,
@@ -78,13 +96,38 @@ class LLMFaithfulnessJudge(FaithfulnessJudge):
                 judge_model=self.settings.JUDGE_LLM_MODEL,
                 judge_prompt_version=JUDGE_PROMPT_VERSION
             )
-            
+
         except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse judge JSON: {e}. Raw response: {response_text}")
+            # ---------------------------------------------------------------
+            # Recovery: the judge response was truncated mid-string (a common
+            # failure when max_tokens is tight).  Attempt to salvage the
+            # faithfulness_score from the partial JSON via regex so we do NOT
+            # silently return a false 0.0 score.
+            # ---------------------------------------------------------------
+            logger.warning(f"Judge JSON truncated or malformed: {e}. Attempting score recovery.")
+            score_match = re.search(r'"faithfulness_score"\s*:\s*([0-9]*\.?[0-9]+)', response_text)
+            if score_match:
+                try:
+                    recovered_score = float(score_match.group(1))
+                    recovered_score = max(0.0, min(1.0, recovered_score))
+                    logger.info(f"Recovered faithfulness_score={recovered_score} from truncated judge response.")
+                    is_hallucination = recovered_score < self.settings.HALLUCINATION_THRESHOLD
+                    return EvaluationResult(
+                        faithfulness_score=recovered_score,
+                        hallucination_flag=is_hallucination,
+                        explanation="[Recovered from truncated response] " + response_text[:200],
+                        judge_model=self.settings.JUDGE_LLM_MODEL,
+                        judge_prompt_version=JUDGE_PROMPT_VERSION
+                    )
+                except ValueError:
+                    pass
+
+            # Could not recover score — fall back safely.
+            logger.error(f"Judge returned invalid JSON and score recovery failed. Raw: {response_text[:300]}")
             return EvaluationResult(
                 faithfulness_score=0.0,
                 hallucination_flag=True,
-                explanation="Judge failed to return valid JSON.",
+                explanation="Judge returned invalid JSON and score could not be recovered.",
                 judge_model=self.settings.JUDGE_LLM_MODEL,
                 judge_prompt_version=JUDGE_PROMPT_VERSION
             )

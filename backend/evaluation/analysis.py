@@ -277,3 +277,32 @@ def evaluate_success_criterion(stats: Dict[str, Dict[str, Any]]) -> List[Dict[st
             })
             
     return results
+
+
+def compute_recall_at_k(valid_records: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+    """
+    Computes mean Recall@1, Recall@3, Recall@5 for all 6 conditions.
+    Only counts records that have recall_at_1/3/5 values (not None).
+    """
+    groups = {format_condition_name(lang, mit): [] for lang, mit in REQUIRED_CONDITIONS}
+
+    for r in valid_records:
+        cond = format_condition_name(r["language"], r["mitigation_enabled"])
+        if cond in groups:
+            groups[cond].append(r)
+
+    recall_stats = {}
+    for cond_name, group in groups.items():
+        # Filter to records that have recall values
+        r1_vals = [r["recall_at_1"] for r in group if r.get("recall_at_1") is not None]
+        r3_vals = [r["recall_at_3"] for r in group if r.get("recall_at_3") is not None]
+        r5_vals = [r["recall_at_5"] for r in group if r.get("recall_at_5") is not None]
+
+        recall_stats[cond_name] = {
+            "n_with_recall": len(r1_vals),
+            "recall_at_1": round(statistics.mean(r1_vals), 4) if r1_vals else None,
+            "recall_at_3": round(statistics.mean(r3_vals), 4) if r3_vals else None,
+            "recall_at_5": round(statistics.mean(r5_vals), 4) if r5_vals else None,
+        }
+
+    return recall_stats
