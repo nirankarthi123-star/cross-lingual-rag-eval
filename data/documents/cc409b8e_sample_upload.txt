@@ -1,0 +1,2 @@
+Cross-Lingual RAG Evaluation test document for document upload validation.
+This document contains test data for telecom support policies and international roaming.
