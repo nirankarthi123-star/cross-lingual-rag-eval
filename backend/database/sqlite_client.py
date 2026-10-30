@@ -60,7 +60,11 @@ class SQLiteClient:
                         judge_model TEXT,
                         started_at TEXT,
                         completed_at TEXT,
-                        error TEXT
+                        error TEXT,
+                        expected_document_ids TEXT,
+                        recall_at_1 REAL,
+                        recall_at_3 REAL,
+                        recall_at_5 REAL
                     )
                 ''')
 
@@ -74,11 +78,21 @@ class SQLiteClient:
                         dataset_path TEXT,
                         embedding_model TEXT,
                         generator_model TEXT,
+                        normalizer_model TEXT,
                         judge_model TEXT,
                         top_k INTEGER,
                         judge_prompt_version TEXT,
                         hallucination_threshold REAL,
-                        created_at TEXT
+                        created_at TEXT,
+                        corpus_manifest_hash TEXT,
+                        dataset_hash TEXT,
+                        chunk_size INTEGER,
+                        chunk_overlap INTEGER,
+                        temperature REAL,
+                        rag_prompt_hash TEXT,
+                        judge_prompt_hash TEXT,
+                        normalizer_prompt_hash TEXT,
+                        detector_version TEXT
                     )
                 ''')
 
@@ -126,26 +140,43 @@ class SQLiteClient:
         try:
             with sqlite3.connect(self.db_path) as conn:
                 cursor = conn.cursor()
-                cursor.execute('''
-                    INSERT OR IGNORE INTO experiment_configs
-                    (experiment_id, language, condition_name, mitigation_enabled,
-                     dataset_path, embedding_model, generator_model, judge_model,
-                     top_k, judge_prompt_version, hallucination_threshold, created_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ''', (
-                    config.experiment_id,
-                    config.language,
-                    config.condition_name,
-                    config.mitigation_enabled,
-                    config.dataset_path,
-                    config.embedding_model,
-                    config.generator_model,
-                    config.judge_model,
-                    config.top_k,
-                    config.judge_prompt_version,
-                    config.hallucination_threshold,
-                    config.created_at,
-                ))
+                # Determine existing columns in target table
+                cursor.execute("PRAGMA table_info(experiment_configs)")
+                table_cols = {row[1] for row in cursor.fetchall()}
+
+                # Candidate values from config
+                val_map = {
+                    "experiment_id": config.experiment_id,
+                    "language": config.language,
+                    "condition_name": config.condition_name,
+                    "mitigation_enabled": config.mitigation_enabled,
+                    "dataset_path": config.dataset_path,
+                    "embedding_model": config.embedding_model,
+                    "generator_model": config.generator_model,
+                    "normalizer_model": getattr(config, "normalizer_model", None),
+                    "judge_model": config.judge_model,
+                    "top_k": config.top_k,
+                    "judge_prompt_version": config.judge_prompt_version,
+                    "hallucination_threshold": config.hallucination_threshold,
+                    "created_at": config.created_at,
+                    "corpus_manifest_hash": getattr(config, "corpus_manifest_hash", None),
+                    "dataset_hash": getattr(config, "dataset_hash", None),
+                    "chunk_size": getattr(config, "chunk_size", None),
+                    "chunk_overlap": getattr(config, "chunk_overlap", None),
+                    "temperature": getattr(config, "temperature", None),
+                    "rag_prompt_hash": getattr(config, "rag_prompt_hash", None),
+                    "judge_prompt_hash": getattr(config, "judge_prompt_hash", None),
+                    "normalizer_prompt_hash": getattr(config, "normalizer_prompt_hash", None),
+                    "detector_version": getattr(config, "detector_version", None),
+                }
+
+                cols_to_insert = [col for col in val_map if col in table_cols]
+                placeholders = ", ".join(["?"] * len(cols_to_insert))
+                col_names = ", ".join(cols_to_insert)
+                values = [val_map[col] for col in cols_to_insert]
+
+                query = f"INSERT OR IGNORE INTO experiment_configs ({col_names}) VALUES ({placeholders})"
+                cursor.execute(query, values)
                 conn.commit()
         except Exception as e:
             logger.error(f"Failed to save experiment config: {e}")
@@ -155,6 +186,18 @@ class SQLiteClient:
         try:
             with sqlite3.connect(self.db_path) as conn:
                 cursor = conn.cursor()
+                # Add new columns if upgrading from an older DB (migration safety)
+                for col, col_type in [
+                    ("expected_document_ids", "TEXT"),
+                    ("recall_at_1", "REAL"),
+                    ("recall_at_3", "REAL"),
+                    ("recall_at_5", "REAL"),
+                ]:
+                    try:
+                        cursor.execute(f"ALTER TABLE experiment_results ADD COLUMN {col} {col_type}")
+                    except Exception:
+                        pass  # Column already exists
+
                 cursor.execute('''
                     INSERT OR IGNORE INTO experiment_results
                     (run_id, experiment_id, question_id, language, mitigation_enabled,
@@ -162,8 +205,9 @@ class SQLiteClient:
                      retrieved_document_ids, retrieved_context, generated_answer,
                      faithfulness_score, hallucination_flag, faithfulness_explanation,
                      embedding_model, generator_model, judge_model,
-                     started_at, completed_at, error)
-                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                     started_at, completed_at, error,
+                     expected_document_ids, recall_at_1, recall_at_3, recall_at_5)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 ''', (
                     result.run_id,
                     result.experiment_id,
@@ -185,6 +229,10 @@ class SQLiteClient:
                     result.started_at,
                     result.completed_at,
                     result.error,
+                    json.dumps(result.expected_document_ids),
+                    result.recall_at_1,
+                    result.recall_at_3,
+                    result.recall_at_5,
                 ))
                 conn.commit()
                 return cursor.lastrowid

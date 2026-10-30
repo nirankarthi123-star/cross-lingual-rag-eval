@@ -1,0 +1,80 @@
+BOOKLET ON
+DIGITAL & TRANSACTION BANKING PRODUCTS
+Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department
+
+DIGITAL & TRANSACTION BANKING PRODUCTS
+Transaction Banking is a technology driven platform catering to the bulk transaction requirements of Clients with value additions like customized MIS, integration with ERP and dedicated single point Client Support Cell for the Clients. Salient features of our Transaction Banking Products are enumerated below:
+
+COLLECTION PRODUCTS
+
+CASH & CHEQUE COLLECTION
+- Collection of receivables (Cash & Cheque) from Corporates in centralized pooling account.
+- Customized MIS on Daily & Monthly basis, facilitating easy and effective reconciliation.
+- Single point of contact and escalation matrix for any issue.
+- Self Cash Deposition and Cash Pickup by Agency both the facilities are available.
+- Secured Cash Pickup at no risk as Insurance for Cash in Transit is available. 
+
+POWER JYOTI PUL TBU
+- Specially designed for collection of funds in Centralized Pooling Account from all 22000 + SBI branches. 
+- Deposition / collection by Cash and / or Cheque through authorized personnel of the Client. 
+- No input data error at the Branches as Client’s data is pre-uploaded data in the system
+- Maximum deposit of Rs 3 lakh per day per branch (Branch Manager may permit more) 
+- Customized Challan for deposition at Branches. 
+
+EASY COLLECT
+- Facilitates collection of Premium amount of Insurance Companies at all 22000 + SBI Branches. 
+- Premium can be deposited in Cash, SBI drawn Cheques and Other Bank’s Cheques payable in local clearing.
+- Printed acknowledgement for customer instantly.
+- No input data error as Real Time validation of Premium details available through web interface.
+
+MANDATE BASED COLLECTION
+- Mandate based Collection in Client’s Centralized pooling account.
+- SBI and other Banks Mandates can be registered through scanned image. 
+- Secured Portal based Image/Transaction file upload and MIS download facility is available. 
+- Customized MIS reports for easy reconciliation is available.
+
+E-MANDATE
+- Digital version of Mandated based Collection in Client’s Centralized Pooling Account.
+- Self Online Registration of mandate can be done through Internet Banking or Debit Card. 
+- Reduces TAT for registration and eliminates rejection of Mandates due to signature mismatch.
+- Secured Portal based Transaction file upload and MIS download facility is available. 
+
+COLLECTION (VAN) 
+- Virtual Account Number enables collections through unique alphanumeric codes instead of account number. 
+- Collection in pool account through RTGS / NEFT / SBI Cheques / Clearing Cheque / Cash / RINB / CINB.
+- Multiple VANs can be mapped to a single collection account.
+- Real Time MIS of funds collected is available.
+
+DIGI DEALER
+- Mobile application for fast, and secure Cash and SBI Cheque deposition. 
+- Can be accessed through Yono Business App on Google Play store. 
+- Green Banking initiative paper less deposition through Digi Code.
+- Real Time Credit in Client’s centralized pooling Account.
+- Real Time MIS is available. 
+
+PAYMENTS PRODUCTS
+
+E-PAYMENTS: RTGS / NEFT / DIRECT CREDIT
+- Enables faster settlement of payables for corporate viz. salary, commission etc.
+- Comprehensive, user friendly and single file format for all types of payments.
+- Payments based on authorization matrix shared by the Client.
+- Data sharing through secure channels: Portal / Host to host utility.
+- Ease of reconciliation by providing customized MIS reports.
+- Payment advices to the customer as well as to the corporate.
+
+DIVIDEND WARRANTS
+- Dividend / principal redemption / interest payout can be done using SBI multi payment options like RTGS / NEFT, DCR, DW, DD, SWIFT, Dollar DDs etc.
+- Instant return and reconciliation reports available.
+- DDs can be issued immediately for any transaction failure / returns.
+
+CORPORATE CHEQUE PAYABLE AT PAR (CCPAP) & DEMAND DRAFTS
+- Centralized bulk printing of Multicity cheques (CCPAPs – Corporate Cheques Payable at par) as well as Bulk Drafts.
+- Online validation of the Instrument number, Amount and Drawer account number before clearing to avoid fraudulent payments.
+- Facsimile signature-based instrument up to Rs 100 Lacs.
+- Secured Portal based Transaction file upload and MIS download facility is available.
+
+LIQUIDITY MANAGEMENT 
+- Facilitates Company to sweep funds from its main account to different accounts as per its requirement and reverse sweep unutilized funds to the main account.
+- Facilitates interest saving & efficient management of funds for Corporate.
+- Debit balances also can be swept if day light limits are fixed.
+- Customized MIS facility.

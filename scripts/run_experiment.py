@@ -45,7 +45,7 @@ setup_logging()
 logger = logging.getLogger("run_experiment")
 
 
-DEFAULT_DATASET = "data/queries/sample_queries.json"
+DEFAULT_DATASET = "data/queries/final_queries_v1.json"
 
 
 def parse_args():
@@ -74,8 +74,16 @@ def parse_args():
         help=f"Path to query dataset JSON/CSV. Default: {DEFAULT_DATASET}"
     )
     parser.add_argument(
+        "--db", default="data/research_study.db",
+        help="Path to SQLite DB (e.g. data/research_study.db). Default: data/research_study.db"
+    )
+    parser.add_argument(
         "--dry-run", action="store_true",
         help="Show what would be executed without making any API calls."
+    )
+    parser.add_argument(
+        "--skip-preflight", action="store_true",
+        help="Bypass preflight corpus and dataset validation (not recommended for production)."
     )
     parser.add_argument(
         "--delay", type=float, default=0.5,
@@ -101,7 +109,20 @@ def parse_args():
 
 def main():
     args = parse_args()
-    db = SQLiteClient()
+
+    # ── Database isolation safeguard ─────────────────────────────────────
+    # If not exporting, prevent accidental writes to legacy pilot database data/rag_eval.db
+    is_export_only = bool(args.export_csv or args.export_json)
+    if not is_export_only and "rag_eval.db" in os.path.basename(args.db).lower():
+        print("=" * 75)
+        print("FATAL ERROR: 'data/rag_eval.db' is reserved for historical pilot data.")
+        print("Overwriting or appending new experimental runs to it is strictly prohibited.")
+        print("Please specify a separate database for production runs, e.g.:")
+        print("    --db data/research_study.db")
+        print("=" * 75)
+        sys.exit(1)
+
+    db = SQLiteClient(db_path=args.db)
 
     # ── Export mode ──────────────────────────────────────────────────────
     if args.export_csv:
@@ -119,6 +140,25 @@ def main():
         print("ERROR: Specify --all, --language, --mitigation, or an export flag.")
         print("       Run with --help for usage.")
         sys.exit(1)
+
+    # ── Preflight safety & validation ────────────────────────────────────
+    corpus_hash = None
+    dataset_hash = None
+    if not args.skip_preflight:
+        from backend.experiments.preflight import PreflightValidator
+        validator = PreflightValidator()
+        res = validator.validate(args.dataset, require_retrieval_metrics=True)
+        if not res.is_valid:
+            print(f"\n{'='*70}")
+            print(f"[ERROR] Preflight validation failed for '{args.dataset}':")
+            print(f"{'='*70}")
+            for err in res.errors:
+                print(f"  - {err}")
+            print("\nAborting experiment execution to preserve research integrity.")
+            sys.exit(1)
+        corpus_hash = res.corpus_hash
+        dataset_hash = res.dataset_hash
+        logger.info(f"Preflight passed: corpus_hash={corpus_hash[:16]}..., dataset_hash={dataset_hash[:16]}...")
 
     # ── Load dataset ─────────────────────────────────────────────────────
     logger.info(f"Loading query dataset: {args.dataset}")
@@ -142,6 +182,8 @@ def main():
         dataset_path=args.dataset,
         languages=language_filter,
         mitigation_filter=args.mitigation,
+        corpus_manifest_hash=corpus_hash,
+        dataset_hash=dataset_hash,
     )
 
     if not matrix:
@@ -164,6 +206,7 @@ def main():
 
     # ── Run ────────────────────────────────────────────────────────────────
     print(f"\nStarting experiment: {len(matrix)} total runs.")
+    print(f"Target Database    : {db.db_path}")
     results = runner.run_all(matrix, delay_between_runs=args.delay)
 
     # ── Summary ────────────────────────────────────────────────────────────
@@ -189,8 +232,8 @@ def main():
         for r in failed[:5]:
             print(f"    [{r.experiment_id}] q={r.question_id}: {r.error[:100]}")
 
-    print(f"\nResults stored in: data/rag_eval.db")
-    print(f"Export with: python scripts/run_experiment.py --export-csv results/output.csv")
+    print(f"\nResults stored in: {db.db_path}")
+    print(f"Export with: python scripts/run_experiment.py --db {db.db_path} --export-csv results/output.csv")
 
 
 if __name__ == "__main__":

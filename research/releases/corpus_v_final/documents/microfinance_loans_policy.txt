@@ -1,0 +1,130 @@
+State Bank of India
+Policy on ‘Microfinance Loans’
+
+1. Introduction:
+1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Framework for Microfinance Loans” vide Circular RBI/DOR/2021-22/89- DoR.FIN.REC.95/03.10.038/2021-22 dated 14/03/2022 and updated on 25.07.2022.
+
+2. Definition of Microfinance Loan
+2.1 A microfinance loan is defined as a collateral-free loan given to a household having annual household income up to ₹3,00,000. For this purpose, the household shall mean an individual family unit, i.e., husband, wife and their unmarried children.
+2.2 All collateral-free loans, irrespective of end use and mode of application/processing/ disbursal (either through physical or digital channels), provided to low-income households, i.e., households having annual income up to ₹3,00,000, shall be considered as microfinance loans.
+2.3 To ensure collateral-free nature of the microfinance loan, the loan shall not be linked with a lien on the deposit account of the borrower.
+Further, loans are utilised/disbursed, with or without Micro Credit Plan and assets created are not quantified. Hence it can be treated as purpose neutral loan and Margin requirement is to be treated as NIL
+2.4 Bank shall have the flexibility of repayment periodicity on microfinance loans as per borrower’s requirement. While factoring in repayment frequency, components of income taken for arriving the Household Income shall be ascertained and source of income constituting more than 50% of the income of the total income on a monthly basis is to be considered for arriving at repayment frequency. Repayment frequency shall be weekly/fortnightly/monthly.
+Repayment schedule, if finalised at weekly/fortnightly basis, monthly repayment demand shall be apportioned and Bank shall disclose repayment related information to a prospective borrower.
+2.5 Maximum repayment period is to be kept at 36 months with an allowable maximum moratorium period of 2 months.
+
+3. Assessment of Household Income
+3.1 Assessment of household income will be as per the indicative methodology for assessment of household income.
+3.2 Bank shall mandatorily submit information regarding household income to the Credit Information Companies (CICs). Reasons for any divergence between the already reported household income and assessed household income shall be specifically ascertained from the borrower/s before updating the assessed household income with CICs.
+
+4. Limit on Loan Repayment Obligations of a Household
+4.1 The limit on the outflows on account of repayment of monthly loan obligations of a household as a percentage of the monthly household income shall be subject to a limit of maximum 50 per cent of the monthly household income.
+4.2 The computation of loan repayment obligations shall take into account all outstanding loans (collateral-free microfinance loans as well as any other type of collateralized loans) of the household. The outflows capped at 50 per cent of the monthly household income shall include repayments (including both principal as well as interest component) towards all existing loans as well as the loan under consideration.
+4.3 Existing loans, for which outflows on account of repayment of monthly loan obligations of a household as a percentage of the monthly household income exceed the limit of 50 per cent, shall be allowed to mature. However, in such cases, no new loans shall be provided to these households till the prescribed limit of 50 per cent is complied with.
+4.4 Bank shall provide timely and accurate data to the CICs and use the data available with them to ensure compliance with the level of indebtedness. Besides, the Bank shall also ascertain the same from other sources such as declaration from the borrowers, their bank account statements and local enquiries.
+Bank has existing mechanism to capture the data as per reporting format for MFI Borrowers and transmission of same to CIC.
+
+5. Pricing of Loans
+5.1 Bank will put in place a separate and distinct product for Micro-finance Loans, covering pricing of microfinance loans which shall, inter alia, cover the following:
+(i) A well-documented interest rate model/ approach for arriving at the all-inclusive interest rate;
+(ii) Delineation of the components of the interest rate such as cost of funds, risk premium and margin, etc. in terms of the quantum of each component based on objective parameters;
+(iii)The range of spread of each component for a given category of borrowers; and
+(iv)A ceiling on the interest rate and all other charges applicable to the microfinance loans.
+5.2 Interest rates and other charges/ fees on microfinance loans should not be usurious.
+5.3 Bank shall disclose pricing related information to a prospective borrower in a standardised simplified factsheet.
+5.4 Any fees to be charged to the microfinance borrower by the Bank and/ or its partner/ agent shall be explicitly disclosed in the factsheet. The borrower shall not be charged any amount which is not explicitly mentioned in the factsheet.
+5.5 The factsheet shall also be provided for other loans (i.e., collateralized loans) extended to borrowers from low-income households.
+5.6 There shall be no pre-payment penalty on microfinance loans. Penalty, if any, for delayed payment shall be applied on the overdue amount and not on the entire loan amount.
+5.7 Bank shall prominently display the minimum, maximum and average interest rates charged on microfinance loans in all its Branches/offices, in the literature (information booklets/ pamphlets) issued by it and details on its website. This information shall also be included in the Supervisory returns and will be subjected to supervisory scrutiny.
+5.8 Any change in interest rate or any other charge shall be informed to the borrower well in advance and these changes shall be effective only prospectively.
+5.9 Bank would make available information regarding interest charged by Bank on microfinance loans to the regulators (RBI).
+
+6. Guidelines on Conduct towards Microfinance Borrowers
+6.1 General Guidelines
+6.1.1 Bank has a Fair Practices Code (FPC) towards its customers, which shall be updated suitably based on above directions. The FPC shall be displayed by the Bank in all its Branches/ offices and on its website. The FPC should be issued in a language understood by the borrower.
+6.1.2 There shall be a standard form of loan agreement for microfinance loans in a language understood by the borrower.
+6.1.3 Bank shall provide a loan card to the borrower which shall incorporate the following:
+(i) Information which adequately identifies the borrower;
+(ii) Simplified factsheet on pricing;
+(iii) All other terms and conditions attached to the loan;
+(iv)Acknowledgements by the Bank of all repayments including instalments received and the final discharge; and
+(v) Details of the grievance redressal system, including the name and contact number of the nodal officer of the Bank.
+6.1.4 All entries in the loan card should be in a language understood by the borrower.
+6.1.5 Issuance of non-credit products shall be with full consent of the borrowers and fee structure for such products shall be explicitly communicated to the borrower in the loan card itself.
+
+6.2 Training of Staff
+6.2.1 Bank shall in its training programmes for staff ensure training on an ongoing basis on various aspects of banking, including conduct and behaviour towards customers. Bank will ensure that system and procedures regarding their recruitment, including minimum qualifications, training and monitoring are in place.
+6.2.2 Field staff shall be trained to make necessary enquiries regarding the income and existing debt of the household.
+6.2.3 Training, if any, offered to the borrowers shall be free of cost.
+
+6.3 Responsibilities for Outsourced Activities
+6.3.1 Outsourcing of any activity by the Bank does not diminish its obligations and the onus of compliance with these directions shall rest solely with the Bank.
+6.3.2 A declaration that the Bank shall be accountable for inappropriate behaviour by its employees or employees of the outsourced agency and shall provide timely grievance redressal, shall be made in the loan agreement with borrower and also in the FPC displayed in its office/ branch premises/ website.
+
+6.4 Guidelines related to Recovery of Loans
+6.4.1 Bank shall put in place a mechanism for identification of the borrowers facing repayment related difficulties, engagement with such borrowers and providing them necessary guidance about the recourse available.
+Bank will keep a track on the repayment cycle of the borrower and adherence to it. Any delinquency in repayment is to be ascertained and borrowers are to be consulted immediately. If need be, assessment of household income is to be reassessed to track the major variation in income accruals to service the current obligations. If required, the repayment tenure should be suitably adjusted by way of re-structuring or flexible repayment schedule beyond contractual period, although the initial tenure for loan is fixed for 36 months. Repayment tenure may be relaxed in accordance with revised assessment of household income within the overall ceiling of repayment. Such relaxation in tenure may be granted upto 24 months.
+6.4.2 Recovery shall be made at any branch of the Bank or a Kiosk/Customer Service point of the appointed Banking Correspondent (BC). However, field staff shall be allowed to make recovery at the place of residence or work of the borrower if (a) the account is irregular, (b) borrower fails to appear at the Home Branch or Kiosk on two or more successive occasions, or (c) if the borrower so desires.
+6.4.3 Bank or its agent shall not engage in any harsh method towards recovery. Without limiting the general application of the foregoing, following practices shall be deemed as harsh:
+(i) Use of threatening or abusive language
+(ii) Persistently calling the borrower and/ or calling the borrower before 9:00 a.m. and after 6:00 p.m.
+(iii) Harassing relatives, friends, or co-workers of the borrower
+(iv)Publishing the names of borrowers
+(v) Use or threat of use of violence or other similar means to harm the borrower or borrower’s family/ assets/ reputation
+(vi)Misleading the borrower about the extent of the debt or the consequences of nonrepayment
+6.4.4 Bank’s mechanism for redressal of grievances through Contact Center, Branches or other Admin. Offices shall be used to deal with grievances in respect of micro finance loans also. The phone / email details for raising grievance shall be provided to the borrower at the time of loan disbursal.
+
+6.5 Engagement of Recovery Agents
+6.5.1 Recovery agents shall mean agencies engaged by the Bank for recovery of dues from its borrowers and the employees of these agencies.
+6.5.2 Bank shall have a due diligence process in place for engagement of recovery agents, which shall, inter alia, cover individuals involved in the recovery process. Bank shall ensure that the recovery agents engaged by them carry out verification of the antecedents of their employees, which shall include police verification. Bank shall also decide the periodicity at which re-verification of antecedents shall be resorted to.
+6.5.3 To ensure due notice and appropriate authorization, the Bank shall provide the details of recovery agents to the borrower while initiating the process of recovery. The agent shall also carry a copy of the notice and the authorization letter from the Bank along with the identity card issued to him by the Bank or the agency. Further, where the recovery agency is changed by the Bank during the recovery process, in addition to the Bank notifying the borrower of the change, the new agent shall carry the notice and the authorization letter along with his identity card.
+6.5.4 The notice and the authorization letter shall, among other details, also include the contact details of the recovery agency and the Bank.
+6.5.5 The up-to-date details of the recovery agencies engaged by the Bank shall also be hosted on the Bank’s website.
+
+8. NPAs
+a) Recognition of NPAs: Recognition of NPAs will be as per RBI guidelines.
+b) Compromise and Settlement: Bank’s existing compromise & settlement policy will be applicable for Microfinance loans.
+
+9. Internal Audit: The loans under Microfinance shall be included in the scope of Internal/statutory audit within the Bank and additional requirements from Govt. of India in case of loan accounts becoming eligible for interest subvention etc., if any. Therefore, Bank’s extant RFIA & Statutory Audit guidelines will be made applicable to these loans.
+
+10. Provisioning/Reporting Requirement: Bank will follow provisioning requirements including declaration of accounts as NPA, as per the regulatory guidelines as applicable. Bank will carry out their respective reporting requirements including reporting to Credit Information Companies, under respective applicable laws and regulations for Microfinance Loans.
+
+FREQUENTLY ASKED QUESTIONS
+Q 1. Whether all members of a household are mandatorily required to become borrowers of a microfinance loan?
+Ans. The directions require assessment of income and indebtedness at household level. There is no requirement of treating all members of the household as applicants/ borrowers of a loan which can be provided to an individual member. The methodologies/ operational frameworks to assess income and indebtedness of all members of the household are included in this policy.
+Q 2. Whether loans for consumption (i.e., for buying gadgets, meeting expenses on ceremonies, etc.) without collateral would be treated as microfinance loans?
+Ans. All collateral-free loans to individual/s belonging to low-income households, i.e., households having annual income up to ₹3,00,000 are treated as microfinance loans.
+Q 3. If a loan is backed by hypothecation of any security (gold, equipment, white goods, underlying assets etc.), will this loan be considered collateral-free and classified as a microfinance loan?
+Ans. Loans backed by hypothecation of any security shall not be treated as microfinance loans.
+Q 4. Whether the instructions related to limit of 50 per cent on monthly loan repayment obligations of a household as a percentage of monthly household income apply to non-microfinance loans given to low-income households?
+Ans. Yes, for providing a non-microfinance loan to a low-income household (as defined under the directions), it should be ensured that the limit of 50 per cent on monthly loan repayment obligations of a household as a percentage of monthly household income is not breached. In other words, the limit of 50 per cent shall include both microfinance as well as non-microfinance loans.
+Q 5. How should credit facilities not having an EMI feature be treated for arriving at total monthly repayment obligations of the household?
+Ans. One possible way could be to distribute the annualized repayment obligations over twelve months to estimate monthly outgo of the household towards debt repayment.
+Q 6. Can expected income from an asset/ activity financed by a microfinance loan be included for estimation of household income?
+Ans. No.
+Q 7. What type of insurance charges are to be disclosed in the factsheet and included for computation of effective annualized interest rate? Whether charges related to non-credit products should also be provided in the factsheet?
+Ans. The insurance charges included in the factsheet are only for credit linked insurance product as these charges are linked to the microfinance loan. A borrower would not have incurred these charges if he had not taken the loan. The factsheet should contain information related to only pricing of microfinance loans to keep it uncluttered. Disclosures related to other non-credit products should be provided separately from the factsheet. All non-credit products (both financial products such as investment products, insurance products etc. as well as non-financial products such as solar lanterns, sewing machines etc.) should be provided only with the explicit consent of the borrower and Bank should ensure that there is no direct or indirect linkage between the loan provided to the borrower and other non-credit products. No non-credit product shall be sold as a pre-condition for the loan product. Bank should prominently display that purchase of any non-credit product by the microfinance borrowers is purely on a voluntary basis. Board-approved Fair Practices Code of the Bank should also cover this aspect.
+Q 8. Are banks allowed to review and revise interest rates applicable to existing loans during the loan tenure apart from cases of restructured loans?
+Ans. As per RBI guidelines, the directions are applicable to loans sanctioned on or after April 1, 2022. Accordingly, pricing of the existing loans of NBFC-MFIs i.e., sanctioned prior to April 1, 2022 shall continue to be as per the guidelines applicable as on March 31, 2022. Banks were already free to decide pricing of loans sanctioned, they are allowed to review and revise interest rates applicable to the existing loans also, subject to compliance with the relevant guidelines.
+Q 9. Is the practice of calling a borrower before 9.00 am and after 6.00 pm being considered as harsh practice only for recovery of overdue loans or also for normal conduct of business?
+Ans. This clause is applicable only for recovery from borrowers having overdue loans. For other borrowers, Bank can continue with the existing timing/ process for business like group meetings, collection in regular accounts, etc. as per borrowers’ convenience.
+Q 10. Is there any specific reason for including a dedicated mechanism for redressal of recovery related grievances when there is already a customer grievance redress mechanism?
+Ans. The purpose of having a dedicated redress mechanism for recovery related grievances is that these grievances should be promptly addressed. Treating (clubbing) them as (with) other complaints (e.g., operational issues) may result in delayed action. However, this does not imply that a separate redress mechanism for recovery related grievances is being mandated. The Bank can restructure/ re-organise the existing customer grievance redress mechanism to identify and promptly address recovery related grievances.
+Q 11. What should a customer keep in mind while availing a microfinance loan?
+Ans. The customer should keep in mind, among others, the following:
+a) There is no requirement of keeping any deposit/ margin/ collateral/ primary security with the lender at any stage of the microfinance loan.
+b) Lender is required to provide a loan card to the borrower in a language understood by the borrower which should have following information:
+• Information which adequately identifies the borrower;
+• Simplified factsheet on pricing;
+• All other terms and conditions attached to the loan;
+• Acknowledgements by the lender of all repayments including instalments received and the final discharge; and
+• Details of the grievance redress system, including the name and contact number of the nodal officer of the lender.
+c) Purchase of any non-credit products is purely voluntary. Fee structure for such products shall be explicitly communicated in the loan card.
+d) Training provided by the lenders is free of cost.
+Q 12. What are the charges that a customer is required to pay for a microfinance loan?
+Ans. A customer is required to pay only those charges which are explicitly mentioned in the factsheet provided by the lender. Besides this, the customer should also note the following:
+• There is no pre-payment penalty on microfinance loans.
+• Penalty, if any, for delayed payment can be applied only on the overdue amount and not on the entire loan amount.
+• Any change in interest rate or any other charge shall be informed to the borrower in writing well in advance and these changes shall be effective only prospectively.
+Q 13. How can a borrower find about the current interest rates being charged on the microfinance loans?
+Ans. RBI has made it mandatory for lenders to display the minimum, maximum and average interest rates charged on microfinance loans in all their offices, in the literature (information booklets/ pamphlets) issued by them and details on their website.
