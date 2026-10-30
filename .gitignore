@@ -1,43 +1,135 @@
+# ==============================================================================
+# Cross-Lingual RAG Evaluation — .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
 # Python byte-compiled / cache files
+# ------------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
 *.so
 .Python
 
-# Environments
-env/
+# ------------------------------------------------------------------------------
+# Virtual environments
+# ------------------------------------------------------------------------------
+.venv/
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
 
-# Environment variables & secrets (Never commit secrets)
+# ------------------------------------------------------------------------------
+# Environment variables & secrets (NEVER commit real keys)
+# ------------------------------------------------------------------------------
 .env
-*.env
+.env.*
 !.env.example
+!.env.template
+*.pem
+*.key
+secrets/
+credentials/
+service-account*.json
 
+# ------------------------------------------------------------------------------
 # Testing & code coverage
+# ------------------------------------------------------------------------------
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .coverage
 htmlcov/
 
-# Local databases and persistence
+# ------------------------------------------------------------------------------
+# Local databases and raw experiment outputs
+# (Pilot/production SQLite databases contain potentially sensitive records)
+# ------------------------------------------------------------------------------
 *.db
 *.sqlite
 *.sqlite3
 
-# Data directories
-data/vector_store/*
-data/processed/*
+# ------------------------------------------------------------------------------
+# Data: generated/processed artifacts — keep source documents & query JSON files
+# ------------------------------------------------------------------------------
+data/vector_store/
+data/processed/
 !data/processed/.gitkeep
 
-# Allow source documents and queries to be tracked
+# Allow source documents and query benchmarks
 !data/documents/
 !data/queries/
 
-# IDEs & System files
+# ------------------------------------------------------------------------------
+# Research releases: keep manifests and license notes, exclude large binaries
+# ------------------------------------------------------------------------------
+research/releases/corpus_v_final/vector_store/
+research/releases/corpus_v_final/processed/
+# Large source PDF in corpus release (676 kB binary; tracked via manifest hash)
+research/releases/corpus_v_final/documents/*.pdf
+
+# ------------------------------------------------------------------------------
+# Overleaf / LaTeX report (excluded from this repository entirely)
+# ------------------------------------------------------------------------------
+overleaf-report/
+overleaf-report.zip
+overleaf-report*.zip
+
+# ------------------------------------------------------------------------------
+# Ad-hoc ZIP snapshots of the backend (use releases instead)
+# ------------------------------------------------------------------------------
+backend.zip
+
+# ------------------------------------------------------------------------------
+# LaTeX auxiliary and generated files (if any .tex files exist in the repo)
+# ------------------------------------------------------------------------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# ------------------------------------------------------------------------------
+# Logs and temporary files
+# ------------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+
+# ------------------------------------------------------------------------------
+# Jupyter checkpoints
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------------------------
+# Build and distribution artifacts
+# ------------------------------------------------------------------------------
+build/
+dist/
+*.egg-info/
+site-packages/
+
+# ------------------------------------------------------------------------------
+# IDEs & operating-system files
+# ------------------------------------------------------------------------------
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
+*~

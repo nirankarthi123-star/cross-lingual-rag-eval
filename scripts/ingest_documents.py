@@ -89,6 +89,16 @@ def ingest(
         stats = validate_dataset(documents=all_documents, chunks=all_chunks)
         stats.print_summary()
 
+    try:
+        from backend.experiments.preflight import generate_corpus_manifest
+        generate_corpus_manifest(
+            documents_dir=str(input_dir),
+            processed_dir=str(output_dir),
+            manifest_path=str(output_dir / "corpus_manifest.json"),
+        )
+    except Exception as e:
+        logger.warning(f"Could not automatically update corpus manifest: {e}")
+
     return all_documents, all_chunks
 
 

@@ -227,9 +227,21 @@ class ExperimentRunner:
         skipped = 0
         pending = 0
 
+        first_config = matrix[0][0] if matrix else None
+
         print(f"\n{'='*70}")
         print(f"DRY-RUN — Experiment Matrix")
         print(f"{'='*70}")
+        print(f"Target Database      : {self.db.db_path}")
+        if first_config:
+            print(f"Generator Model      : {first_config.generator_model}")
+            print(f"Normalizer Model     : {first_config.normalizer_model}")
+            print(f"Judge Model          : {first_config.judge_model}")
+            print(f"Embedding Model      : {first_config.embedding_model}")
+            if first_config.corpus_manifest_hash:
+                print(f"Corpus Manifest Hash : {first_config.corpus_manifest_hash}")
+            if first_config.dataset_hash:
+                print(f"Dataset Hash         : {first_config.dataset_hash}")
         print(f"Total runs in matrix : {len(matrix)}")
         print(f"Already completed    : {len(completed)}")
 

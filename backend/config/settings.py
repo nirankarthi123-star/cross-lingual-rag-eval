@@ -38,9 +38,14 @@ class Settings(BaseSettings):
     DEFAULT_TOP_K: int = 5
     
     # LLM Provider Configuration
+    # Current supported model: "openai/gpt-oss-20b" (standardized across generator, normalizer, judge)
+    # Legacy historical models (decommissioned/deprecated):
+    # - "llama3-8b-8192" (used in pilot runs; decommissioned on Groq)
+    # - "llama-3.1-8b-instant" (used in early judge exploration)
     LLM_PROVIDER: str = "groq"
     GROQ_API_KEY: str = ""
     LLM_MODEL: str = "openai/gpt-oss-20b"
+    NORMALIZER_LLM_MODEL: str = "openai/gpt-oss-20b"
     LLM_TEMPERATURE: float = 0.0
     LLM_MAX_TOKENS: int = 1024
     RAG_TOP_K: int = 5

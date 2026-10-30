@@ -1,0 +1,2902 @@
+[
+  {
+    "question_id": "DEV-Q01",
+    "domain": "Telecom",
+    "category": "Postpaid Services",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "a10c7fc9f1613ba3"
+    ],
+    "gold_supporting_evidence": "Question: How do I activate international roaming on my mobile postpaid connection? Answer: International roaming can be enabled through the self-care mobile po",
+    "english": {
+      "query": "How do I activate international roaming on my mobile postpaid connection?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Ennoda mobile postpaid connection-la international roaming eppadi activate panrathu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Mere mobile postpaid connection par international roaming kaise activate karu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "DEV-Q02",
+    "domain": "Banking",
+    "category": "International Transfers",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "4a59037b0e30a112"
+    ],
+    "gold_supporting_evidence": "What documents are required for outward foreign currency wire transfers?  Outward remittances under the Liberalised Remittance Scheme (LRS) require submission o",
+    "english": {
+      "query": "What documents are required for outward foreign currency wire transfers?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Outward foreign currency wire transfers anuppa enna documents thevai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Outward foreign currency wire transfers ke liye kaunse documents required hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "DEV-Q03",
+    "domain": "Telecom",
+    "category": "Device Support",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "ef57775e6583affc"
+    ],
+    "gold_supporting_evidence": "Question: What is the procedure for converting a physical SIM card to an eSIM? Answer: Submit an eSIM upgrade request through the mobile app. You will receive a",
+    "english": {
+      "query": "What is the procedure for converting a physical SIM card to an eSIM?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Oru physical SIM card-ai eSIM-aaga maatra procedure enna?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Physical SIM card ko eSIM mein convert karne ka procedure kya hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q04",
+    "domain": "Banking",
+    "category": "Digital Banking",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "650a8d084f403647"
+    ],
+    "gold_supporting_evidence": "What is the daily transaction limit for UPI transfers?  The standard daily limit for Unified Payments Interface (UPI) transfers is 100,000 INR per bank account",
+    "english": {
+      "query": "What is the daily UPI transaction limit for a bank account?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Oru bank account-la daily UPI transaction limit evvalavu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Bank account mein UPI ka daily limit kitna hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q05",
+    "domain": "Banking",
+    "category": "Card Services",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "6c7d4f5e209c358d"
+    ],
+    "gold_supporting_evidence": "How can I temporarily freeze my lost debit card?  Customers can instantly freeze or block their debit card using the mobile banking application under 'Cards > S",
+    "english": {
+      "query": "How can I temporarily freeze my lost debit card?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Ennoda kaabadu pona debit card-ai eppadi temporarily freeze pannuvathu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Mera debit card kho gaya, use temporarily freeze kaise karun?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q06",
+    "domain": "Banking",
+    "category": "Account Maintenance",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "dd28e57a50d2b11e"
+    ],
+    "gold_supporting_evidence": "What are the minimum average balance requirements for savings accounts?  For urban and metro branch savings accounts, the required monthly average balance (MAB)",
+    "english": {
+      "query": "What is the minimum average balance required for an urban savings account?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Urban savings account-ku minimum average balance enna maintain pananum?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Urban savings account ke liye minimum average balance kitna chahiye?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q07",
+    "domain": "Banking",
+    "category": "Fraud Protection",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "8436fe73133e94fb"
+    ],
+    "gold_supporting_evidence": "What is the zero liability policy for unauthorized electronic transactions?  Under the zero liability policy, if a customer reports an unauthorized electronic t",
+    "english": {
+      "query": "What is the zero liability policy for unauthorized electronic transactions?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Unauthorized electronic transaction-ku zero liability policy epdi work aagum?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Unauthorized electronic transaction ke liye zero liability policy kya hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q08",
+    "domain": "Banking",
+    "category": "Microfinance Eligibility",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "What is the maximum annual household income limit to be eligible for a microfinance loan?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance loan paiya oru kudumbathoda maximum annual income evvalavu irukkanum?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Microfinance loan ke liye household ka maximum annual income kitna hona chahiye?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q09",
+    "domain": "Banking",
+    "category": "Microfinance Repayment",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "What is the maximum repayment period allowed for a microfinance loan?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance loan repayment period maximum evvalavu months irukkum?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Microfinance loan ka maximum repayment period kitne months ka hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q10",
+    "domain": "Banking",
+    "category": "Microfinance Repayment",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "What percentage of monthly household income is the limit for loan repayment obligations?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Monthly household income-la enna percentage loan repayment-ku limit vaikkurathu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Monthly household income ka kitna percent loan repayment obligations ka limit hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q11",
+    "domain": "Banking",
+    "category": "Microfinance Pricing",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "Is there a pre-payment penalty on microfinance loans?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance loan early close pannina enna penalty irukka?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Microfinance loan ko early close karne par koi penalty lagegi kya?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q12",
+    "domain": "Banking",
+    "category": "Microfinance Eligibility",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "Is collateral required to take a microfinance loan from the bank?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Bank-la microfinance loan eduka collateral venuma?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Bank se microfinance loan lene ke liye koi collateral chahiye kya?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q13",
+    "domain": "Banking",
+    "category": "Microfinance Repayment",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "What repayment frequency options are available for microfinance borrowers?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance borrowers enna enna repayment frequency options choose pannalaam?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Microfinance borrowers ke liye repayment frequency ke kya options available hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q14",
+    "domain": "Banking",
+    "category": "Microfinance Conduct",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "What information must a bank include in the loan card provided to microfinance borrowers?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance borrower-ku kudukka vendiya loan card-la enna information irukkaanum?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Microfinance borrower ko diye gaye loan card mein kya information hona chahiye?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q15",
+    "domain": "Banking",
+    "category": "Microfinance Recovery",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "What practices are considered harsh and prohibited in microfinance loan recovery?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance loan recovery-la enna actions harsh-aa consider panranga?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Microfinance loan recovery mein kaunsi practices harsh aur prohibited mani jati hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q16",
+    "domain": "Banking",
+    "category": "Microfinance Pricing",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "Can a bank change the interest rate on an existing microfinance loan mid-tenure?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Bank oru microfinance loan interest rate-aa loan period-la change pannalama?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Kya bank ek existing microfinance loan ka interest rate tenure ke beech mein change kar sakta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q17",
+    "domain": "Banking",
+    "category": "Microfinance Eligibility",
+    "difficulty": "Hard",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "If a gold-hypothecated loan exists, can the household still get a microfinance loan?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Gold hypothecation loan iruntha, anththa household innum microfinance loan edukka mudiyuma?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Agar gold hypothecation loan hai, to kya woh household microfinance loan le sakta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q18",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What does the SBI Code of Ethics stand for with respect to its core values?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI Code of Ethics-la solla padra core values enna?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI Code of Ethics mein core values kya hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q19",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What is the SBI bank's vision statement?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI bank-oda vision statement enna?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI bank ka vision statement kya hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q20",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What actions are prohibited under the SBI anti-bribery and anti-corruption guidelines?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI anti-bribery guidelines padiya enna enna paninkooda kathadhu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI anti-bribery guidelines mein kya kya actions prohibited hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q21",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What are the gift acceptance limits for SBI officers in Scale V?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI Scale V officers enna enna gifts accept pannalaam? Limit evvalavu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI Scale V officers ke liye gift accept karne ki limit kya hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q22",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What does the SBI code say about using bank resources for political purposes?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Bank resources-aa political purposes-ku use panna SBI code enna solranga?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Political purposes ke liye bank resources use karne par SBI code kya kehta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q23",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What does the SBI code say about sharing customer information?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Customer information share panna SBI code enna restrict panranga?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI code customer information share karne ke baare mein kya kehta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q24",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Hard",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What is the non-retaliation commitment stated in the SBI Code of Ethics?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI Code of Ethics-la non-retaliation commitment epdi explain panranga?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI Code of Ethics mein non-retaliation commitment kya hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q25",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Hard",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What actions does the SBI code mandate for reporting suspicious transactions under AML guidelines?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "AML guidelines padiya suspicious transactions find pannina enna panna solranga SBI code-la?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "AML guidelines mein suspicious transaction milne par SBI code kya karne ko kehta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q26",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "What is the Cash and Cheque Collection product offered by SBI Transaction Banking?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI Transaction Banking-la Cash and Cheque Collection product epdi work aaguthu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI Transaction Banking mein Cash and Cheque Collection product kaise kaam karta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q27",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "What is the maximum cash deposit allowed per day per branch using the Power Jyoti product?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Power Jyoti product use pannina per day per branch maximum cash deposit evvalavu pannalaam?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Power Jyoti product mein ek branch mein ek din mein maximum kitna cash deposit kar sakte hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q28",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "How does the E-Mandate product differ from traditional Mandate Based Collection?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "E-Mandate product traditional Mandate Collection-la irundhu enna differ aaguthu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "E-Mandate product traditional Mandate Based Collection se kaise alag hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q29",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "What is the Virtual Account Number (VAN) collection product and how does it work?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "VAN collection product enna? Ithu epdi work panratha?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "VAN collection product kya hai aur yeh kaise kaam karta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q30",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "What is the Digi Dealer product and which app is used to access it?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Digi Dealer product enna? Ithai access panna enna app use pannanum?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Digi Dealer product kya hai aur ise access karne ke liye kaunsa app use hota hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q31",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "What payment options does SBI offer for corporate dividend payouts?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Corporate dividend payouts-ku SBI enna enna payment options offer panranga?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Corporate dividend payouts ke liye SBI kaunse payment options offer karta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q32",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Hard",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "What is the CCPAP instrument and what is the maximum facsimile signature limit for it?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "CCPAP instrument enna? Atha facsimile signature limit evvalavu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "CCPAP instrument kya hai aur iske liye facsimile signature limit kitna hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q33",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "How does SBI's Liquidity Management product help corporates?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI Liquidity Management product corporates-ku epdi help panratha?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI ka Liquidity Management product corporates ki kaise help karta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q34",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "What are the payment channels supported by SBI's e-payments product for salary disbursements?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Salary disburse panna SBI e-payments product enna enna channels support panratha?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Salary disburse karne ke liye SBI e-payments product kaunse channels support karta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q35",
+    "domain": "Banking",
+    "category": "Microfinance Conduct",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "Is training offered to microfinance borrowers free of charge?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance borrowers-ku kudukka padra training free of cost-aa irukka?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Kya microfinance borrowers ko diya jaane wala training free hota hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q36",
+    "domain": "Banking",
+    "category": "Microfinance Recovery",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "Can field staff recover microfinance loan dues at the borrower's home?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Field staff borrower veetla poi microfinance loan dues collect pannalama?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Kya field staff borrower ke ghar jaake microfinance loan recovery kar sakta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q37",
+    "domain": "Banking",
+    "category": "Microfinance Recovery",
+    "difficulty": "Hard",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "What verification must be done before engaging recovery agents for microfinance loans?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance loan recovery agents engage panna enna verification panna vendam?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Microfinance loan ke liye recovery agents engage karne se pehle kya verification karni padti hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q38",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What does the SBI code say employees should do when they discover wrongdoing?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Oru employee wrongdoing paartha SBI code enna panna soluchu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI code kehta hai ki kisi wrongdoing ka pata chalne par employee kya kare?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q39",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "Is insider trading allowed for SBI employees or their family members?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI employees ya athoda family members insider trading pannalama?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Kya SBI employees ya unke family members insider trading kar sakte hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q40",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What types of IT assets does SBI classify as bank assets under the Code of Ethics?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI Code of Ethics-la bank IT assets endha endha classify panranga?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI Code of Ethics mein bank ke IT assets mein kya kya shamil hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q41",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "How many SBI branches is the Power Jyoti product designed to work across?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Power Jyoti product evvalavu SBI branches-la work aagum?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Power Jyoti product kitne SBI branches mein kaam karta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q42",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "Can multiple VANs be assigned to a single pooling account in the Collection VAN product?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Collection VAN product-la oru pooling account-ku multiple VANs assign pannalama?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Collection VAN product mein ek pooling account par multiple VANs assign kiye ja sakte hain kya?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q43",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "What channels can be used to deposit premium amounts through SBI's Easy Collect product?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI Easy Collect-la premium amount enga enga deposit panna mudiyum?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI Easy Collect product mein premium amount kaunse channels se deposit kar sakte hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q44",
+    "domain": "Banking",
+    "category": "Code of Ethics",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "6bbc2adeac669e25"
+    ],
+    "gold_supporting_evidence": "ETHICS & BUSINESS CONDUCT DEPARTMENT CODE OF ETHICS Version 3.0 SERVICE | TRANSPARENCY | ETHICS | POLITENESS | SUSTAINABILITY  VISION Be the Bank of Choice for",
+    "english": {
+      "query": "What does the SBI code say about giving gifts to government officials?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Government officials-ku gift kudukka SBI code enna solranga?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI code mein government officials ko gifts dene ke baare mein kya likha hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q45",
+    "domain": "Banking",
+    "category": "Microfinance Conduct",
+    "difficulty": "Hard",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "What happens if a bank's outsourced agency behaves inappropriately with microfinance borrowers?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Outsourced agency microfinance borrowers kitta wrong-aa nadanthukinaanga, bank enna பண்ண vendam?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Agar outsourced agency microfinance borrowers ke saath galat behave kare to bank ki kya zimmedari hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q46",
+    "domain": "Banking",
+    "category": "Transaction Banking",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "2dea0f923830ad98"
+    ],
+    "gold_supporting_evidence": "BOOKLET ON DIGITAL & TRANSACTION BANKING PRODUCTS Salient features of Cash Management products offered by Digital & Transaction Banking – Marketing Department",
+    "english": {
+      "query": "How does SBI's transaction banking MIS help corporate clients?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI transaction banking MIS corporate clients-ku epdi help panratha?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI transaction banking ka MIS corporate clients ki kaise help karta hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q47",
+    "domain": "Banking",
+    "category": "Microfinance Recovery",
+    "difficulty": "Hard",
+    "expected_document_ids": [
+      "5627f773659c8503"
+    ],
+    "gold_supporting_evidence": "State Bank of India Policy on ‘Microfinance Loans’  1. Introduction: 1.1 Reserve Bank of India (RBI) had issued Master Directions/guidelines on “Regulatory Fram",
+    "english": {
+      "query": "If a microfinance borrower is struggling to repay, what restructuring options does the bank policy allow?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "Microfinance borrower repay panna kashtapattaa, bank policy enna restructuring options kudukka solranga?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "Agar microfinance borrower repay karna mushkil ho, to bank policy mein kya restructuring options hain?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q48",
+    "domain": "Banking",
+    "category": "Green Bond",
+    "difficulty": "Hard",
+    "expected_document_ids": [
+      "71bdb7e3a15cf8c3"
+    ],
+    "gold_supporting_evidence": "Pg-1  Pg-2  Introduction Scope of the Engagement Green Bond allocation Unutilised Proceeds Conclusion SBI’s Management’s responsibilities Page no. 03 Page no. 0",
+    "english": {
+      "query": "What SBI green bond project had the highest amount allocated as of March 2025?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI green bond-la March 2025 vara highest allocation patta project enna?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "March 2025 tak SBI green bond mein sabse zyada amount kaunse project ko allocate kiya gaya?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q49",
+    "domain": "Banking",
+    "category": "Green Bond",
+    "difficulty": "Medium",
+    "expected_document_ids": [
+      "71bdb7e3a15cf8c3"
+    ],
+    "gold_supporting_evidence": "Pg-1  Pg-2  Introduction Scope of the Engagement Green Bond allocation Unutilised Proceeds Conclusion SBI’s Management’s responsibilities Page no. 03 Page no. 0",
+    "english": {
+      "query": "What was the total CO2 emission abated by SBI's green bond projects?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI green bond projects-la total CO2 emission evvalavu reduce aachathu?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI green bond projects se total kitna CO2 emission kam hua?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  },
+  {
+    "question_id": "BANK-Q50",
+    "domain": "Banking",
+    "category": "Green Bond",
+    "difficulty": "Easy",
+    "expected_document_ids": [
+      "71bdb7e3a15cf8c3"
+    ],
+    "gold_supporting_evidence": "Pg-1  Pg-2  Introduction Scope of the Engagement Green Bond allocation Unutilised Proceeds Conclusion SBI’s Management’s responsibilities Page no. 03 Page no. 0",
+    "english": {
+      "query": "When did SBI raise the USD 250 million green bond and when does it mature?",
+      "status": "CANONICAL_ENGLISH_REFERENCE"
+    },
+    "tamil_english": {
+      "query": "SBI USD 250 million green bond endha date-la raise pannaanga? Maturity endha date?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    },
+    "hindi_english": {
+      "query": "SBI ne USD 250 million green bond kab raise kiya aur uski maturity kab hai?",
+      "script_type": "Romanized",
+      "status": "PENDING_HUMAN_BILINGUAL_REVIEW",
+      "reviewer_1": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "id": null,
+        "score": null,
+        "notes": null
+      },
+      "adjudication": {
+        "status": "PENDING",
+        "final_query": null,
+        "adjudicator": null
+      }
+    }
+  }
+]

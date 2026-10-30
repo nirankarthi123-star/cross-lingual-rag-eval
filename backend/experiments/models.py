@@ -18,11 +18,23 @@ class ExperimentConfig(BaseModel):
     dataset_path: str = Field(..., description="Path to the query dataset file used.")
     embedding_model: str = Field(..., description="Embedding model identifier.")
     generator_model: str = Field(..., description="LLM model used for answer generation.")
+    normalizer_model: str = Field("openai/gpt-oss-20b", description="LLM model used for query normalization.")
     judge_model: str = Field(..., description="LLM model used as the faithfulness judge.")
     top_k: int = Field(..., description="Number of retrieved documents passed to the generator.")
     judge_prompt_version: str = Field(..., description="Prompt version used by the judge.")
     hallucination_threshold: float = Field(..., description="Score threshold below which hallucination_flag is set.")
     created_at: str = Field(..., description="ISO timestamp when this config was created.")
+
+    # Extended Research Reproducibility Metadata
+    corpus_manifest_hash: Optional[str] = Field(None, description="SHA-256 hash of the corpus manifest.")
+    dataset_hash: Optional[str] = Field(None, description="SHA-256 hash of the query dataset file.")
+    chunk_size: Optional[int] = Field(500, description="Chunk size in characters.")
+    chunk_overlap: Optional[int] = Field(100, description="Chunk overlap in characters.")
+    temperature: Optional[float] = Field(0.0, description="Sampling temperature for LLM calls.")
+    rag_prompt_hash: Optional[str] = Field(None, description="SHA-256 hash of the RAG system prompt.")
+    judge_prompt_hash: Optional[str] = Field(None, description="SHA-256 hash of the judge system prompt.")
+    normalizer_prompt_hash: Optional[str] = Field(None, description="SHA-256 hash of the normalizer system prompt.")
+    detector_version: Optional[str] = Field("v1-two-pass-heuristic", description="Version of the code-mix detector.")
 
 
 class ExperimentResult(BaseModel):

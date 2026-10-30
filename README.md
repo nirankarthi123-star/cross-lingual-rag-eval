@@ -40,16 +40,34 @@ The framework then compares the faithfulness of the RAG generator (scored by an 
 - `backend/`: FastAPI application, API routes, and core RAG modules (detection, normalization, retrieval, generation, evaluation).
 - `frontend/`: Static HTML/JS/CSS files (`index.html` for Chatbot, `dashboard.html` for Evaluation).
 - `scripts/`: CLI scripts for ingestion, experiment running, and analysis.
-- `tests/`: 67 automated Pytest tests.
+- `tests/`: 74 automated Pytest tests.
 - `data/`:
-  - `documents/`: Source corpus files (PDF, CSV, TXT, JSON).
-  - `queries/`: Information needs dataset (`sample_queries.json`).
-  - `processed/` & `vector_store/`: Generated chunks and FAISS index.
+  - `documents/`: Source corpus files (8 files: PDF, CSV, TXT, JSON).
+  - `queries/`: Information needs dataset (`sample_queries.json` with 50 base questions).
+  - `processed/` & `vector_store/`: Generated chunks (180 chunks), corpus manifest, and FAISS index.
 - `results/`: Output analysis reports and CSVs.
 
-## Dataset Description
-- **Corpus**: 5 sample documents (Banking FAQ, Telecom Support, University Policies, Library Guide, Green Bond Report) parsed into 12 documents and 23 chunks.
-- **Queries**: 3 information needs across Telecom and Banking domains. Each need has an English, Tamil-English, and Hindi-English variant (9 total variants).
+## Dataset & Corpus Architecture
+
+### Active Production Corpus vs. Historical Pilot Corpus
+- **Active Expanded Corpus**:
+  - **8 source documents** in `data/documents/`: Banking FAQ (JSON), Telecom Support (CSV), University Policies (TXT), Campus Library Guide (PDF), SBI Green Bond Impact Report (PDF), Digital Banking Products (TXT), Code of Ethics (TXT), and Microfinance Loans Policy (TXT).
+  - Parsed into **16 logical documents** and **180 indexed chunks** (500 chars / 100 overlap).
+  - Documented and hash-verified via `data/processed/corpus_manifest.json`.
+- **Active Query Dataset**:
+  - **50 base information needs** across Banking and Telecom.
+  - 3 balanced variants per need: English, Tamil-English (Tanglish), Hindi-English (Hinglish) = **150 total queries**.
+  - All 50 queries have ground-truth `expected_document_ids` for Recall@1, Recall@3, and Recall@5 calculation.
+- **Historical Pilot Corpus (Archived)**:
+  - Initial 5 sample documents parsed into 12 documents and 23 chunks with 3 dev queries (`DEV-Q01`..`DEV-Q03`).
+
+## Database Partitioning
+
+To maintain strict scientific integrity and avoid data contamination:
+- **`data/research_study.db` (Clean Production Study)**:
+  Dedicated database for the complete 300-run experiment (50 queries × 6 conditions). Starts empty, enforces preflight safety validation, and records comprehensive reproducibility metadata.
+- **`data/rag_eval.db` (Legacy Pilot Record)**:
+  Historical database preserved read-only containing the 18 pilot runs, early decommissioned model errors, and partial exploratory runs.
 
 ## Installation Requirements
 ```bash
@@ -74,6 +92,8 @@ Create a `.env` file in the root directory (you can copy `.env.example`):
 GROQ_API_KEY=your_groq_api_key_here
 MITIGATION_ENABLED=true
 LLM_MODEL=openai/gpt-oss-20b
+NORMALIZER_LLM_MODEL=openai/gpt-oss-20b
+JUDGE_LLM_MODEL=openai/gpt-oss-20b
 ```
 
 ## How to Run the Backend & Frontend
@@ -81,23 +101,35 @@ The frontend is served directly by the FastAPI backend.
 ```bash
 python -m uvicorn backend.main:app --port 8000 --reload
 ```
-Navigate to `http://127.0.0.1:8000/` in your browser to use the interactive Chatbot.
+Navigate to `http://127.0.0.1:8000/` in your browser to use the interactive Chatbot.  
 Navigate to `http://127.0.0.1:8000/dashboard` to view the Evaluation Dashboard.
 
 ## How to Reproduce Results
-1. **Ingest Documents**:
+
+1. **Ingest Documents & Build Index**:
    ```bash
-   python scripts/run_ingestion.py
+   python scripts/ingest_documents.py
+   python scripts/build_index.py
    ```
-2. **Run the Evaluation Pipeline**:
-   Runs all 6 conditions (Baseline + Mitigated for 3 languages) against the query dataset.
+
+2. **Preflight Safety Validation**:
    ```bash
-   python scripts/run_experiment.py --all
+   python -m backend.experiments.preflight --dataset data/queries/sample_queries.json
    ```
-3. **Analyze Results**:
-   Generates the statistical report in `results/`.
+
+3. **Run Dry-Run (Clean Production Study)**:
    ```bash
-   python scripts/analyze_results.py
+   python scripts/run_experiment.py --all --dataset data/queries/sample_queries.json --db data/research_study.db --dry-run
+   ```
+
+4. **Execute Full Production Experiment**:
+   ```bash
+   python scripts/run_experiment.py --all --dataset data/queries/sample_queries.json --db data/research_study.db
+   ```
+
+5. **Analyze Results**:
+   ```bash
+   python scripts/analyze_results.py --db data/research_study.db --output-dir results/research_study
    ```
 
 ## Example API Endpoints
@@ -109,20 +141,8 @@ Navigate to `http://127.0.0.1:8000/dashboard` to view the Evaluation Dashboard.
 - **Baseline**: The user's query (e.g., code-mixed Tanglish) is embedded as-is and sent directly to FAISS for similarity search.
 - **Mitigation**: The system detects code-mixing and calls an LLM to translate the query into formal English before embedding. The normalized query typically retrieves much more relevant context from the English corpus.
 
-## Results (Pilot Study)
-The pilot study completed 18 evaluated runs across 6 conditions.
-- **Faithfulness Score**: All 18 runs achieved a perfect faithfulness score of `1.0`.
+## Historical Pilot Study Results (Exploratory Prototype)
+The historical coursework pilot completed 18 evaluated runs across 6 conditions on the 3-question dev set:
+- **Faithfulness Score**: All 18 runs achieved a faithfulness score of `1.0`.
 - **Hallucination Rate**: `0%` across all conditions.
-- **Success Criterion**: The gap between English baseline mean and Code-Mixed mitigated mean was `0.00` (which is ≤ 0.10). The success criterion was met for both Tamil-English and Hindi-English.
-- *Note: Due to the zero variance in scores in this small pilot, paired Wilcoxon tests were not statistically viable.*
-
-## Limitations
-- The pilot dataset is very small (3 information needs, 5 synthetic documents).
-- Perfect retrieval led to zero variance in faithfulness scores, preventing formal statistical significance testing.
-- `Recall@K` was not explicitly tracked in the database for the pilot.
-
-## Future Work
-- Scale the evaluation to 50+ information needs and 300+ runs using real-world noisy corpora.
-- Implement formal `Recall@K` tracking and evaluation.
-- Test against non-Romanized, native script code-mixing (Tamil script, Devanagari).
-- Incorporate a human-in-the-loop evaluation to validate the LLM-as-a-Judge scores.
+- **Limitations**: The pilot dataset was too small ($n=3$) and lacked variance, making formal statistical tests (Wilcoxon) non-testable. The full 300-run study resolves this by evaluating 50 diverse queries with ground-truth Recall@K tracking.

@@ -41,6 +41,16 @@ def main():
     print("[INFO] Saving index to disk...")
     indexer.save()
     
+    try:
+        from backend.experiments.preflight import generate_corpus_manifest
+        generate_corpus_manifest(
+            processed_dir=settings.PROCESSED_DIR,
+            vector_store_dir=indexer.vector_store_dir,
+            manifest_path=f"{settings.PROCESSED_DIR}/corpus_manifest.json",
+        )
+    except Exception as e:
+        print(f"[WARN] Could not update corpus manifest: {e}")
+
     print(f"[SUCCESS] Index built and saved to {indexer.vector_store_dir}")
 
 if __name__ == "__main__":

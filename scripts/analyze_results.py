@@ -97,17 +97,14 @@ def generate_dashboard_data(filepath, stats):
 def main():
     args = parse_args()
     
-    if not os.path.exists(args.db):
-        logger.error(f"Database not found at {args.db}")
-        sys.exit(1)
-        
     db = SQLiteClient(args.db)
     raw_records = db.get_all_experiment_results(args.experiment_id)
     
     source_count = len(raw_records)
     if source_count == 0:
-        logger.error("No experiment records found.")
-        sys.exit(1)
+        logger.info(f"No experiment records found in {args.db}.")
+        print(f"[INFO] Database '{args.db}' contains 0 experiment records. Nothing to analyze yet.")
+        return
         
     # Check mock data heuristic (if any record contains "SMOKE" or "test", or explicit flag)
     is_mock = args.mock_data

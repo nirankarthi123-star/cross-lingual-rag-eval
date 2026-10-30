@@ -103,8 +103,8 @@ def test_judge_handles_markdown_wrapped_json():
 def test_judge_returns_fallback_on_invalid_json():
     judge = LLMFaithfulnessJudge(llm=MockJudgeLLM("this is not valid json"))
     result = judge.evaluate(answer="test", context="test context")
-    assert result.faithfulness_score == 0.0
-    assert result.hallucination_flag is True
+    assert result.faithfulness_score is None
+    assert result.hallucination_flag is None
     # Updated message from new recovery-aware fallback path
     assert "invalid JSON" in result.explanation
 
@@ -114,13 +114,13 @@ def test_judge_returns_fallback_on_invalid_json():
 # ---------------------------------------------------------------------------
 
 def test_judge_returns_fallback_on_api_failure():
-    """When the LLM always fails, the judge should return a safe fallback (score=0, flag=True)."""
+    """When the LLM always fails, the judge should return missing evaluation (score=None, flag=None)."""
     judge = LLMFaithfulnessJudge(llm=FailingJudgeLLM())
     judge.retry_delay = 0  # Disable real sleep for speed
     result = judge.evaluate(answer="test", context="test context")
-    assert result.faithfulness_score == 0.0
-    assert result.hallucination_flag is True
-    assert "Judge failed" in result.explanation
+    assert result.faithfulness_score is None
+    assert result.hallucination_flag is None
+    assert "Judge unavailable" in result.explanation
 
 
 # ---------------------------------------------------------------------------
@@ -165,12 +165,12 @@ def test_judge_recovers_score_from_truncated_json_score_0():
 
 
 def test_judge_fallback_when_score_unrecoverable():
-    """JSON that is malformed AND has no extractable score must fall back to 0.0."""
+    """JSON that is malformed AND has no extractable score must fall back to None."""
     garbage = '{"explanation": "something went'
     judge = LLMFaithfulnessJudge(llm=MockJudgeLLM(garbage))
     result = judge.evaluate(answer="test", context="test context")
-    assert result.faithfulness_score == 0.0
-    assert result.hallucination_flag is True
+    assert result.faithfulness_score is None
+    assert result.hallucination_flag is None
     assert "invalid JSON" in result.explanation
 
 
@@ -196,11 +196,11 @@ def test_score_0_is_hallucination():
 
 def test_judge_handles_empty_string_response():
     """Groq can return HTTP 200 with an empty body after a 429 retry.
-    Must log a clear warning and return the safe fallback — not crash."""
+    Must log a clear warning and return missing evaluation (score=None, flag=None) — not crash."""
     judge = LLMFaithfulnessJudge(llm=MockJudgeLLM(""))
     result = judge.evaluate(answer="test", context="test context")
-    assert result.faithfulness_score == 0.0
-    assert result.hallucination_flag is True
+    assert result.faithfulness_score is None
+    assert result.hallucination_flag is None
     assert "empty response" in result.explanation
 
 
@@ -208,6 +208,6 @@ def test_judge_handles_whitespace_only_response():
     """Whitespace-only response must be treated identically to empty."""
     judge = LLMFaithfulnessJudge(llm=MockJudgeLLM("   \n\t  "))
     result = judge.evaluate(answer="test", context="test context")
-    assert result.faithfulness_score == 0.0
-    assert result.hallucination_flag is True
+    assert result.faithfulness_score is None
+    assert result.hallucination_flag is None
     assert "empty response" in result.explanation
